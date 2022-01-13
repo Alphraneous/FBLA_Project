@@ -1,0 +1,25 @@
+{
+  "Attraction": [
+    {
+      "name": "Lake of the Ozarks",
+      "bathrooms": true,
+      "image": "https://static01.nyt.com/images/2020/05/26/us/26xp-virus-ozarks/26xp-virus-ozarks-superJumbo.jpg",
+      "lat": 39.986142,
+      "long": -88.258939
+    },
+    {
+      "name": "Lake of the Ozarks 2",
+      "bathrooms": false,
+      "image": "https://static01.nyt.com/images/2020/05/26/us/26xp-virus-ozarks/26xp-virus-ozarks-superJumbo.jpg",
+      "lat": 39.6978121,
+      "long": -88.0378143
+    },
+    {
+      "name": "Lake of the Ozarks 3",
+      "bathrooms": true,
+      "image": "https://static01.nyt.com/images/2020/05/26/us/26xp-virus-ozarks/26xp-virus-ozarks-superJumbo.jpg",
+      "lat": 40.4237,
+      "long": -86.9212
+    }
+  ]   
+}  
