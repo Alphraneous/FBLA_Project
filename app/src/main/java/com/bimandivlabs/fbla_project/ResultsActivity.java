@@ -48,40 +48,6 @@ public class ResultsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
-        final ListView resultsList = findViewById(R.id.resultsList);
-        ArrayList<Attraction> attractionArray = new ArrayList<Attraction>();
-        ArrayList<Attraction2> resultArray = new ArrayList<Attraction2>();
-        String attractionsJSON = loadJSONFromAsset(ResultsActivity.this);
-        try {
-            JSONObject jsonRootObject = new JSONObject(attractionsJSON);
-            JSONArray attractionsJSONArray = jsonRootObject.optJSONArray("Attraction");
-
-            for (int i = 0; i < attractionsJSONArray.length(); i++) {
-                JSONObject attraction = attractionsJSONArray.getJSONObject(i);
-                String name = attraction.optString("name");
-                Boolean bathrooms = attraction.optBoolean("bathrooms");
-                String imageLink = attraction.optString("image");
-                Double Lat = attraction.optDouble("lat");
-                Double Long = attraction.optDouble("long");
-                attractionArray.add(new Attraction(name, bathrooms, Lat, Long, imageLink));
-            }
-            for (int i = 0; i < attractionArray.size(); i++) {
-                String name = attractionArray.get(i).getName();
-                String image = attractionArray.get(i).getImage();
-                Double Lat = attractionArray.get(i).getLat();
-                Double Long = attractionArray.get(i).getLong();
-                Boolean hasBathrooms = attractionArray.get(i).getBathrooms();
-                runChecks(20,Lat,Long, name, image);
-            }
-            CustomAdapter customAdapter = new CustomAdapter(this, resultArray);
-            resultsList.setAdapter(customAdapter);
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-
-
     }
 
     public String loadJSONFromAsset(Context context) {
@@ -117,7 +83,7 @@ public class ResultsActivity extends AppCompatActivity {
             return true;
         }
     }
-    public void runChecks (Integer maxRange, Double aLat, Double aLong, String name, String image) {
+    public void runChecks (Boolean needsBathroom, Boolean needsPlayground, Integer maxRange) {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -145,11 +111,44 @@ public class ResultsActivity extends AppCompatActivity {
                     @RequiresApi(api = Build.VERSION_CODES.N)
                     public void onSuccess(Location location) {
                         if (location != null) {
-                            LatLng currentLocation = new LatLng(location.getLatitude(),location.getLongitude());
-                            LatLng dest = new LatLng(aLat,aLong);
-                            int distance = (int) Math.round(SphericalUtil.computeDistanceBetween(currentLocation,dest));
-                            int distanceMiles = (int) Math.round(distance / 1609.34);
-                            Boolean mdr = distanceMiles < maxRange;
+                            final ListView resultsList = findViewById(R.id.resultsList);
+                            ArrayList<Attraction> attractionArray = new ArrayList<Attraction>();
+                            ArrayList<Attraction2> resultArray = new ArrayList<Attraction2>();
+                            String attractionsJSON = loadJSONFromAsset(ResultsActivity.this);
+                            try {
+                                JSONObject jsonRootObject = new JSONObject(attractionsJSON);
+                                JSONArray attractionsJSONArray = jsonRootObject.optJSONArray("Attraction");
+
+                                for (int i = 0; i < attractionsJSONArray.length(); i++) {
+                                    JSONObject attraction = attractionsJSONArray.getJSONObject(i);
+                                    String name = attraction.optString("name");
+                                    Boolean bathrooms = attraction.optBoolean("bathrooms");
+                                    String imageLink = attraction.optString("image");
+                                    Double Lat = attraction.optDouble("lat");
+                                    Double Long = attraction.optDouble("long");
+                                    attractionArray.add(new Attraction(name, bathrooms, Lat, Long, imageLink));
+                                }
+                                for (int i = 0; i < attractionArray.size(); i++) {
+                                    String name = attractionArray.get(i).getName();
+                                    String image = attractionArray.get(i).getImage();
+                                    Double Lat = attractionArray.get(i).getLat();
+                                    Double Long = attractionArray.get(i).getLong();
+                                    Boolean hasBathrooms = attractionArray.get(i).getBathrooms();
+                                    LatLng currentLocation = new LatLng(location.getLatitude(),location.getLongitude());
+                                    LatLng dest = new LatLng(Lat,Long);
+                                    int distance = (int) Math.round(SphericalUtil.computeDistanceBetween(currentLocation,dest));
+                                    int distanceMiles = (int) Math.round(distance / 1609.34);
+                                    Boolean mdr = distanceMiles < maxRange;
+                                    if (mbr(false,hasBathrooms) && mdr) {
+                                        resultArray.add(new Attraction2(name,image));
+                                    }
+                                }
+                                CustomAdapter customAdapter = new CustomAdapter(ResultsActivity.this, resultArray);
+                                resultsList.setAdapter(customAdapter);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
                         } else {
                             Toast toast = Toast.makeText(ResultsActivity.this, "Unable to Fetch Location", Toast.LENGTH_LONG);
                             toast.show();
