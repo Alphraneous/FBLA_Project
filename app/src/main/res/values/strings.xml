@@ -14,8 +14,9 @@
     <string name="restaraunts_concessions_nearby">Restaurants/Concessions Nearby</string>
     <string name="wheelchair_accessible">Wheelchair Accessible</string>
     <string name="search_attractions">Search Attractions</string>
-    <string name="within_40_miles">Within: 40 Miles</string>
+    <string name="within_40_miles">Within: 30 Miles</string>
     <string name="no_results_found">No Results Found</string>
+    <string name="search">Search</string>
 
     <string-array name="spinner_options">
         <item>Any Type</item>

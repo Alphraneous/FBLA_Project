@@ -18,14 +18,14 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:textAlignment="textStart"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
         android:layout_marginTop="20sp"
         android:paddingStart="50sp"
         android:paddingEnd="50sp"
-        android:layout_below="@id/textView"
-        android:textSize="15sp"
-        android:text="@string/within_40_miles" />
+        android:text="@string/within_40_miles"
+        android:textAlignment="textStart"
+        android:textSize="15sp" />
 
     <SeekBar
         style="@style/Widget.AppCompat.SeekBar.Discrete"
@@ -74,5 +74,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/wheelchair_accessible" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:text="@string/search" />
     </LinearLayout>
 </RelativeLayout>
