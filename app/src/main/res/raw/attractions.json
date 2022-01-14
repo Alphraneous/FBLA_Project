@@ -100,5 +100,306 @@
       "lat": 42.0898,
       "long": -87.8247
     }
+  ,
+    {
+      "name": "Navy Pier",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2,4],
+      "image": "https://navypier.org/assets/Images/hero/Dock_Cruise_1200x600-1__FocusFillWzgwMCw2MDAsIngiLDIwMF0.jpg",
+      "lat": 41.8919,
+      "long": -87.6051
+    },
+    {
+      "name": "1830 Village of Salem",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2,4],
+      "image": "https://www.nps.gov/liho/learn/historyculture/images/cabin.jpg?maxwidth=650&autorotate=false",
+      "lat": 42.5043,
+      "long": -72.3320
+    },
+    {
+      "name": "Adler Planetarium",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [3],
+      "image": "https://news.wttw.com/sites/default/files/styles/full/public/article/image-non-gallery/AdlerPlanetFB_0.jpg?itok=VbXo7oTM",
+      "lat": 41.8663,
+      "long": -87.6068
+    },
+    {
+      "name": "Anderson Japanese Gardens",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2,4],
+      "image": "https://rotarybotanicalgardens.org/wp-content/uploads/Anderson42014.jpg.jpg",
+      "lat": 42.2901,
+      "long": -89.0578
+    },
+    {
+      "name": "Chicago Botanic Garden",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Chicago_Botanic_Garden_-_Zig_Zag_Bridge.jpg",
+      "lat": 42.0898,
+      "long": -87.8247
+    },
+    {
+      "name": "Chestnut Mountain Resort",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [4],
+      "image": "https://www.visitgalena.org/images/wp-content/2016/05/8359_Chestnut-skier_web.jpg",
+      "lat": 34.1726,
+      "long": -83.8380
+    },
+    {
+      "name": "Cahokia Mounds State Historic Site",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [3,4],
+      "image": "https://upload.travelawaits.com/ta/uploads/2021/04/aerial-view-of-monks-mound-at7148c8.jpg",
+      "lat": 38.6551,
+      "long": -90.0618
+    },
+    {
+      "name": "Mermet Springs",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [4],
+      "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/Mermet-springs-in-water.jpg",
+      "lat": 37.2845,
+      "long": -88.8580
+    },
+    {
+      "name": "The Violet Hour",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [5],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 41.9091,
+      "long": -87.6776
+    },
+    {
+      "name": "Brookfield Zoo",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [4],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 41.8329,
+      "long": -87.8356
+    },
+    {
+      "name": "Krannert Art Museum",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [3],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.1020,
+      "long": -88.2313
+    },
+    {
+      "name": "Spurlock Museum",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [3],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.1076,
+      "long": -88.2208
+    },
+    {
+      "name": "University of Illinois Memorial Stadium",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [6],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.0993,
+      "long": -88.2360
+    },
+    {
+      "name": "State Farm Center",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [6],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.0962,
+      "long": -88.2359
+    },
+    {
+      "name": "Sholem Aquatic Center",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [4],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.1007,
+      "long": -88.2828
+    },
+    {
+      "name": "AMC Champaign 13",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2,4],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.1473,
+      "long": -88.2602
+    },
+    {
+      "name": "University of Illinois Ice Arena",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [4,6],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.1058,
+      "long": -88.2325
+    },
+    {
+      "name": "William M. Staerkel Planetarium",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [3],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.1322,
+      "long": -88.2914
+    },
+    {
+      "name": "Orpheum Children's Science Museum",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [3,4],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.1195,
+      "long": -88.2424
+    },
+    {
+      "name": "Champaign County History Museum",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2,3],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.1165,
+      "long": -88.2385
+    },
+    {
+      "name": "The Senior Memorial Chime of Altgeld Hall",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.1020,
+      "long": -88.2313
+    },
+    {
+      "name": "Chicago Sports Museum",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [3,6],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 41.8980,
+      "long": -87.6236
+    },
+    {
+      "name": "Hancock Stadium",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [6],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 40.5123,
+      "long": -88.9965
+    },
+    {
+      "name": "Cloud Gate",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 41.8827,
+      "long": -87.6233
+    },
+    {
+      "name": "Chicago History Museum",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2,3],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 41.9117,
+      "long": -87.6317
+    },
+    {
+      "name": "Shawnee National Forest",
+      "bathrooms": true,
+      "food": true,
+      "accessible": false,
+      "type": [2],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 37.4922,
+      "long": -88.9339
+    },
+    {
+      "name": "Fort De Chartres",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 38.0878,
+      "long": -90.1590
+    },
+    {
+      "name": "Chicago Cultural Center",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2,3],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 41.8838,
+      "long": -87.6250
+    },
+    {
+      "name": "Field Museum of Natural History",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [3],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 41.8663,
+      "long": -87.6170
+    },
+    {
+      "name": "Abraham Lincoln Presidential Library & Museum",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [3],
+      "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
+      "lat": 39.8033,
+      "long": -89.6472
+    }
   ]   
 }  
