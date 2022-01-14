@@ -48,6 +48,7 @@ public class ResultsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
+        runChecks(this,true,false,false,3,30);
     }
 
     public String loadJSONFromAsset(Context context) {
@@ -83,7 +84,7 @@ public class ResultsActivity extends AppCompatActivity {
             return true;
         }
     }
-    public void runChecks (Boolean needsBathroom, Boolean needsPlayground, Integer maxRange) {
+    public void runChecks (Context context, Boolean needsBathroom, Boolean needsPlayground, Boolean needsAccessible, Integer activityType, Integer maxRange) {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -139,7 +140,7 @@ public class ResultsActivity extends AppCompatActivity {
                                     int distance = (int) Math.round(SphericalUtil.computeDistanceBetween(currentLocation,dest));
                                     int distanceMiles = (int) Math.round(distance / 1609.34);
                                     Boolean mdr = distanceMiles < maxRange;
-                                    if (mbr(false,hasBathrooms) && mdr) {
+                                    if (mbr(needsBathroom,hasBathrooms) && mdr) {
                                         resultArray.add(new Attraction2(name,image));
                                     }
                                 }
