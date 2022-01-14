@@ -29,8 +29,11 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Objects;
 
 public class ResultsActivity extends AppCompatActivity {
@@ -147,6 +150,7 @@ public class ResultsActivity extends AppCompatActivity {
                             TextView nrf = findViewById(R.id.textView3);
                             TextView nrf2 = findViewById(R.id.textView4);
                             if (resultArray.size() != 0) {
+                                Collections.sort(resultArray);
                                 CustomAdapter customAdapter = new CustomAdapter(ResultsActivity.this, resultArray);
                                 resultsList.setAdapter(customAdapter);
                                 nrf.setVisibility(View.GONE);

@@ -74,7 +74,7 @@
       "name": "Grafton Zipline",
       "bathrooms": false,
       "food": true,
-      "accessible": true,
+      "accessible": false,
       "type": [4],
       "image": "https://img.grouponcdn.com/deal/6nXbDLXq6sr34daVnRAh/g7-440x267/v1/sc600x600.jpg",
       "lat": 38.9696,
@@ -112,7 +112,7 @@
       "long": -87.6051
     },
     {
-      "name": "1830 Village of Salem",
+      "name": "Lincoln's New Salem Historic Site",
       "bathrooms": true,
       "food": true,
       "accessible": true,

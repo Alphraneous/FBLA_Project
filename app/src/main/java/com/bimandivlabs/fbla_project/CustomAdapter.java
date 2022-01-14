@@ -63,7 +63,12 @@ class CustomAdapter implements ListAdapter {
             TextView distance = convertView.findViewById(R.id.distanceText);
             ImageView image = convertView.findViewById(R.id.resultImage);
             name.setText(subjectData.SubjectName);
-            distance.setText(subjectData.Distance + " Miles Away");
+            if (distance.getText() == ("1")) {
+                distance.setText(subjectData.Distance + " Mile Away");
+            } else {
+                distance.setText(subjectData.Distance + " Miles Away");
+            }
+
             Picasso.with(context)
                     .load(subjectData.Image)
                     .into(image);

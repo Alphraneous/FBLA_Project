@@ -35,11 +35,13 @@ public class SelectActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int pos, boolean b) {
                 if(pos == 0) {
                     seekBar.setProgress(1);
+                } else if (pos == 11) {
+                    distanceMiles = 100000;
+                    distanceText.setText(R.string.ndl);
                 } else {
                     distanceMiles = (pos)*20;
                     distanceText.setText("Within: " + distanceMiles + " Miles");
                 }
-
             }
 
             @Override
@@ -51,6 +53,8 @@ public class SelectActivity extends AppCompatActivity {
             public void onStopTrackingTouch(SeekBar seekBar) {
 
             }
+
+
         });
         Button searchButton = findViewById(R.id.button);
         searchButton.setOnClickListener(new View.OnClickListener() {
