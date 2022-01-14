@@ -1,26 +1,18 @@
 package com.bimandivlabs.fbla_project;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.location.LocationManager;
-import android.location.LocationRequest;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.Settings;
-import android.util.Log;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -36,13 +28,10 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.text.DecimalFormat;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.PriorityQueue;
 
 public class ResultsActivity extends AppCompatActivity {
-    private FusedLocationProviderClient fusedLocationClient;
-    Boolean isInRange = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +40,8 @@ public class ResultsActivity extends AppCompatActivity {
         runChecks(this,false,false,false,3,80);
     }
 
-    public String loadJSONFromAsset(Context context) {
-        String json = null;
+    public String loadJSONFromAsset() {
+        String json;
         try {
             InputStream is = getResources().openRawResource(R.raw.attractions);
 
@@ -64,7 +53,7 @@ public class ResultsActivity extends AppCompatActivity {
 
             is.close();
 
-            json = new String(buffer, "UTF-8");
+            json = new String(buffer, StandardCharsets.UTF_8);
 
 
         } catch (IOException ex) {
@@ -79,16 +68,9 @@ public class ResultsActivity extends AppCompatActivity {
 
 
     public void runChecks (Context context, Boolean needsBathroom, Boolean needsFood, Boolean needsAccessible, Integer requestedType, Integer maxRange) {
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         }
         fusedLocationClient.getCurrentLocation(100, new CancellationToken() {
             @NonNull
@@ -109,7 +91,7 @@ public class ResultsActivity extends AppCompatActivity {
                             final ListView resultsList = findViewById(R.id.resultsList);
                             ArrayList<Attraction> attractionArray = new ArrayList<Attraction>();
                             ArrayList<Attraction2> resultArray = new ArrayList<Attraction2>();
-                            String attractionsJSON = loadJSONFromAsset(ResultsActivity.this);
+                            String attractionsJSON = loadJSONFromAsset();
                             try {
                                 JSONObject jsonRootObject = new JSONObject(attractionsJSON);
                                 JSONArray attractionsJSONArray = jsonRootObject.optJSONArray("Attraction");
