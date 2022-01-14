@@ -6,7 +6,9 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -30,6 +32,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ResultsActivity extends AppCompatActivity {
 
@@ -37,7 +40,7 @@ public class ResultsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
-        runChecks(this,false,false,false,3,80);
+        runChecks(this,false,false,false,0,80);
     }
 
     public String loadJSONFromAsset() {
@@ -96,7 +99,7 @@ public class ResultsActivity extends AppCompatActivity {
                                 JSONObject jsonRootObject = new JSONObject(attractionsJSON);
                                 JSONArray attractionsJSONArray = jsonRootObject.optJSONArray("Attraction");
 
-                                for (int i = 0; i < attractionsJSONArray.length(); i++) {
+                                for (int i = 0; i < Objects.requireNonNull(attractionsJSONArray).length(); i++) {
                                     JSONObject attraction = attractionsJSONArray.getJSONObject(i);
                                     String name = attraction.optString("name");
                                     Boolean bathrooms = attraction.optBoolean("bathrooms");
@@ -123,11 +126,22 @@ public class ResultsActivity extends AppCompatActivity {
                                     int distanceMiles = (int) Math.round(distance / 1609.34);
                                     Boolean mdr = distanceMiles < maxRange;
                                     if (checkReq(needsBathroom,hasBathrooms) && checkReq(needsFood,hasFood) && checkReq(needsAccessible, hasAccessible) && checkType(requestedType, activityType) && mdr) {
-                                        resultArray.add(new Attraction2(name,image));
+                                        resultArray.add(new Attraction2(name,image,Integer.toString(distanceMiles)));
                                     }
                                 }
-                                CustomAdapter customAdapter = new CustomAdapter(ResultsActivity.this, resultArray);
-                                resultsList.setAdapter(customAdapter);
+                                TextView nrf = findViewById(R.id.textView3);
+                                TextView nrf2 = findViewById(R.id.textView4);
+                                if (resultArray.size() != 0) {
+                                    CustomAdapter customAdapter = new CustomAdapter(ResultsActivity.this, resultArray);
+                                    resultsList.setAdapter(customAdapter);
+                                    nrf.setVisibility(View.GONE);
+                                    nrf2.setVisibility(View.GONE);
+                                    resultsList.setVisibility(View.VISIBLE);
+                                } else {
+                                    nrf.setVisibility(View.VISIBLE);
+                                    nrf2.setVisibility(View.VISIBLE);
+                                    resultsList.setVisibility(View.GONE);
+                                }
 
                             } catch (JSONException e) {
                                 e.printStackTrace();

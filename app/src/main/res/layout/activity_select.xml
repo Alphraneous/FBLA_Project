@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textSize="30sp"
+        android:text="@string/search_attractions" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:paddingStart="50sp"
+        android:paddingEnd="50sp"
+        android:layout_below="@id/textView"
+        android:textSize="15sp"
+        android:text="@string/within_40_miles" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="20sp"
+        android:paddingStart="50sp"
+        android:paddingEnd="50sp"
+        android:max="10"
+        android:scrollbarSize="10dp"
+        android:progress="3" />
+
+    <LinearLayout
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="50sp"
+        android:paddingStart="50sp"
+        android:paddingEnd="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_options"
+            android:layout_marginBottom="20sp"/>
+
+
+        <CheckBox
+            android:id="@+id/bathroomCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/has_bathrooms" />
+
+        <CheckBox
+            android:id="@+id/foodCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/restaraunts_concessions_nearby" />
+
+        <CheckBox
+            android:id="@+id/accessibleCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wheelchair_accessible" />
+    </LinearLayout>
+</RelativeLayout>

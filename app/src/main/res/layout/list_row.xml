@@ -22,4 +22,18 @@
         android:layout_toEndOf="@+id/resultImage"
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/distanceText"
+        android:text="5 Miles Away"
+        android:textSize="11sp"
+        android:layout_below="@id/resultName"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/resultImage"
+        android:layout_toEndOf="@+id/resultImage"
+        android:layout_marginLeft="12sp"
+        android:layout_marginStart="12sp" />
+
 </RelativeLayout>
