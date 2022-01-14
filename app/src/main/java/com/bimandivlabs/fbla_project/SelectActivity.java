@@ -23,7 +23,9 @@ public class SelectActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
         SeekBar distanceBar = findViewById(R.id.seekBar);
-        distanceMiles = distanceBar.getProgress()*10;
+        TextView distanceText = findViewById(R.id.textView2);
+        distanceMiles = distanceBar.getProgress()*20;
+        distanceText.setText("Within: " + distanceMiles + " Miles");
         CheckBox bathrooms = findViewById(R.id.bathroomCheckbox);
         CheckBox food = findViewById(R.id.foodCheckbox);
         CheckBox accessible = findViewById(R.id.accessibleCheckbox);
@@ -34,8 +36,7 @@ public class SelectActivity extends AppCompatActivity {
                 if(pos == 0) {
                     seekBar.setProgress(1);
                 } else {
-                    distanceMiles = (pos)*10;
-                    TextView distanceText = findViewById(R.id.textView2);
+                    distanceMiles = (pos)*20;
                     distanceText.setText("Within: " + distanceMiles + " Miles");
                 }
 
