@@ -48,7 +48,7 @@ public class ResultsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
-        runChecks(this,true,false,false,3,30);
+        runChecks(this,false,false,false,3,80);
     }
 
     public String loadJSONFromAsset(Context context) {
@@ -77,14 +77,8 @@ public class ResultsActivity extends AppCompatActivity {
 
 
 
-    public Boolean mbr (Boolean needsBathroom, Boolean hasBathroom) {
-        if (needsBathroom) {
-            return hasBathroom;
-        } else {
-            return true;
-        }
-    }
-    public void runChecks (Context context, Boolean needsBathroom, Boolean needsPlayground, Boolean needsAccessible, Integer activityType, Integer maxRange) {
+
+    public void runChecks (Context context, Boolean needsBathroom, Boolean needsFood, Boolean needsAccessible, Integer requestedType, Integer maxRange) {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -124,10 +118,13 @@ public class ResultsActivity extends AppCompatActivity {
                                     JSONObject attraction = attractionsJSONArray.getJSONObject(i);
                                     String name = attraction.optString("name");
                                     Boolean bathrooms = attraction.optBoolean("bathrooms");
+                                    Boolean food = attraction.optBoolean("food");
+                                    Boolean accessible = attraction.optBoolean("accessible");
+                                    Integer type = attraction.optInt("type");
                                     String imageLink = attraction.optString("image");
                                     Double Lat = attraction.optDouble("lat");
                                     Double Long = attraction.optDouble("long");
-                                    attractionArray.add(new Attraction(name, bathrooms, Lat, Long, imageLink));
+                                    attractionArray.add(new Attraction(name, bathrooms, food, accessible, type, Lat, Long, imageLink));
                                 }
                                 for (int i = 0; i < attractionArray.size(); i++) {
                                     String name = attractionArray.get(i).getName();
@@ -135,12 +132,15 @@ public class ResultsActivity extends AppCompatActivity {
                                     Double Lat = attractionArray.get(i).getLat();
                                     Double Long = attractionArray.get(i).getLong();
                                     Boolean hasBathrooms = attractionArray.get(i).getBathrooms();
+                                    Boolean hasFood = attractionArray.get(i).getFood();
+                                    Boolean hasAccessible = attractionArray.get(i).getAccessible();
+                                    Integer activityType = attractionArray.get(i).getActivityType();
                                     LatLng currentLocation = new LatLng(location.getLatitude(),location.getLongitude());
                                     LatLng dest = new LatLng(Lat,Long);
                                     int distance = (int) Math.round(SphericalUtil.computeDistanceBetween(currentLocation,dest));
                                     int distanceMiles = (int) Math.round(distance / 1609.34);
                                     Boolean mdr = distanceMiles < maxRange;
-                                    if (mbr(needsBathroom,hasBathrooms) && mdr) {
+                                    if (checkReq(needsBathroom,hasBathrooms) && checkReq(needsFood,hasFood) && checkReq(needsAccessible, hasAccessible) && checkType(requestedType, activityType) && mdr) {
                                         resultArray.add(new Attraction2(name,image));
                                     }
                                 }
@@ -162,9 +162,20 @@ public class ResultsActivity extends AppCompatActivity {
                     }
                 });
     }
-
-    private void setInRange(boolean b) {
-        isInRange=b;
+    public Boolean checkReq (Boolean needsReq, Boolean hasReq) {
+        if (needsReq) {
+            return hasReq;
+        } else {
+            return true;
+        }
     }
+    public Boolean checkType (Integer requestedType, Integer aType) {
+        if (requestedType == 0) {
+            return true;
+        } else {
+            return requestedType.equals(aType);
+        }
+    }
+
 
 }
