@@ -118,7 +118,7 @@ public class ResultsActivity extends AppCompatActivity {
                                 Boolean bathrooms = attraction.optBoolean("bathrooms");
                                 Boolean food = attraction.optBoolean("food");
                                 Boolean accessible = attraction.optBoolean("accessible");
-                                Integer type = attraction.optInt("type");
+                                JSONArray type = attraction.optJSONArray("type");
                                 String imageLink = attraction.optString("image");
                                 Double Lat = attraction.optDouble("lat");
                                 Double Long = attraction.optDouble("long");
@@ -132,7 +132,7 @@ public class ResultsActivity extends AppCompatActivity {
                                 Boolean hasBathrooms = attractionArray.get(i).getBathrooms();
                                 Boolean hasFood = attractionArray.get(i).getFood();
                                 Boolean hasAccessible = attractionArray.get(i).getAccessible();
-                                Integer activityType = attractionArray.get(i).getActivityType();
+                                JSONArray activityType = attractionArray.get(i).getActivityType();
                                 LatLng currentLocation = new LatLng(location.getLatitude(),location.getLongitude());
                                 LatLng dest = new LatLng(Lat,Long);
                                 int distance = (int) Math.round(SphericalUtil.computeDistanceBetween(currentLocation,dest));
@@ -177,11 +177,21 @@ public class ResultsActivity extends AppCompatActivity {
             return true;
         }
     }
-    public Boolean checkType (Integer requestedType, Integer aType) {
+    public Boolean checkType (Integer requestedType, JSONArray aType) {
         if (requestedType == 0) {
             return true;
         } else {
-            return requestedType.equals(aType);
+            for(int i =0; i< aType.length();i++) {
+                try {
+                    if(aType.getInt(i) == requestedType) {
+                        return true;
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    return false;
+                }
+            }
+            return false;
         }
     }
 
