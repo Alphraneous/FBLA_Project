@@ -67,6 +67,7 @@ public class ResultsActivity extends AppCompatActivity {
 
             byte[] buffer = new byte[size];
 
+            //noinspection ResultOfMethodCallIgnored
             is.read(buffer);
 
             is.close();
@@ -94,6 +95,7 @@ public class ResultsActivity extends AppCompatActivity {
             @NonNull
             @Override
             public CancellationToken onCanceledRequested(@NonNull OnTokenCanceledListener onTokenCanceledListener) {
+                //noinspection ConstantConditions
                 return null;
             }
 

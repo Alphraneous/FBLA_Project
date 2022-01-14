@@ -1,24 +1,24 @@
 {
   "Attraction": [
     {
-      "name": "Lake of the Ozarks",
+      "name": "Willis Tower",
       "bathrooms": true,
       "food": true,
       "accessible": true,
       "type": [1,2],
       "image": "https://static01.nyt.com/images/2020/05/26/us/26xp-virus-ozarks/26xp-virus-ozarks-superJumbo.jpg",
-      "lat": 39.986142,
-      "long": -88.258939
+      "lat": 41.8789,
+      "long": -87.6359
     },
     {
-      "name": "Lake of the Ozarks 2",
+      "name": " Illinois Route 66 Hall of Fame",
       "bathrooms": false,
       "food": true,
       "accessible": true,
-      "type": [1,2],
+      "type": [2,3],
       "image": "https://static01.nyt.com/images/2020/05/26/us/26xp-virus-ozarks/26xp-virus-ozarks-superJumbo.jpg",
-      "lat": 39.6978121,
-      "long": -88.0378143
+      "lat": 40.881130,
+      "long": -88.629540
     },
     {
       "name": "Lake of the Ozarks 3",
