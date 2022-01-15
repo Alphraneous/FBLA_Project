@@ -35,7 +35,7 @@ public class SelectActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int pos, boolean b) {
                 if(pos == 0) {
                     seekBar.setProgress(1);
-                } else if (pos == 11) {
+                } else if (pos == 10) {
                     distanceMiles = 100000;
                     distanceText.setText(R.string.ndl);
                 } else {
