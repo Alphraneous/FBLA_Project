@@ -245,7 +245,7 @@
       "name": "Sholem Aquatic Center",
       "bathrooms": true,
       "food": true,
-      "accessible": true,
+      "accessible": false,
       "type": [4],
       "image": "https://champaignparks.com/wp-content/uploads/2014/08/Sholem_01_mini-800x533.jpg",
       "lat": 40.1007,
@@ -440,6 +440,56 @@
       "image": "https://cdn.branchcms.com/JVXM9wad0E-1708/images/trails/trail-system/IMG_1968-large-2-57.1.jpg",
       "lat": 41.7809,
       "long": -87.5802
+    },
+    {
+      "name": "Block Museum of Art",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2,3],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/NU_Block_Museum_of_Art.JPG/1200px-NU_Block_Museum_of_Art.JPG",
+      "lat": 42.0524,
+      "long": -87.6727
+    },
+    {
+      "name": "Illinois Holocaust Museum & Education Center",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2,3],
+      "image": "https://www.ilholocaustmuseum.org/wp-content/uploads/2020/11/museum-lobby.jpg",
+      "lat": 42.0566,
+      "long": -87.7608
+    },
+    {
+      "name": "Lincoln Monument Association",
+      "bathrooms": true,
+      "food": true,
+      "accessible": true,
+      "type": [2],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lincoln%27s_Tomb.JPG",
+      "lat": 39.8232,
+      "long": -89.6557
+    },
+    {
+      "name": "Oak Street Beach",
+      "bathrooms": true,
+      "food": true,
+      "accessible": false,
+      "type": [4],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Oak_Street_Beach.jpg/250px-Oak_Street_Beach.jpg",
+      "lat": 41.9030,
+      "long": -87.6228
+    },
+    {
+      "name": "Tribune Tower",
+      "bathrooms": true,
+      "food": true,
+      "accessible": false,
+      "type": [1,2],
+      "image": "https://mansion-global-app.s3.amazonaws.com/stories/tribune-tower-one-of-chicago-s-most-recognizable-buildings-offers-luxury-living-with-a-side-of-history/assets/kZXTbRbTwN/tribtower_lead_v4_vert-2349x2349.jpeg",
+      "lat": 41.8905,
+      "long": -87.6233
     }
   ]   
 }  
