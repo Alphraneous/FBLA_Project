@@ -245,7 +245,7 @@
       "name": "Sholem Aquatic Center",
       "bathrooms": true,
       "food": true,
-      "accessible": true,
+      "accessible": false,
       "type": [4],
       "image": "https://champaignparks.com/wp-content/uploads/2014/08/Sholem_01_mini-800x533.jpg",
       "lat": 40.1007,
