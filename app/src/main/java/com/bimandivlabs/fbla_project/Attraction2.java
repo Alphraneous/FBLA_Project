@@ -4,10 +4,12 @@ public class Attraction2 implements Comparable<Attraction2> {
     String SubjectName;
     String Image;
     String Distance;
-    public Attraction2(String subjectName, String image, String distance) {
+    String Website;
+    public Attraction2(String subjectName, String image, String distance, String website) {
         this.SubjectName = subjectName;
         this.Image = image;
         this.Distance = distance;
+        this.Website = website;
     }
 
     public int compareTo(Attraction2 attraction)

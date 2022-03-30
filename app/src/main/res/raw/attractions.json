@@ -8,7 +8,8 @@
       "type": [1,2],
       "image": "https://img.static-kl.com/images/media/0E7A5386-D2C1-4644-968B4385D504F819?aspect_ratio=1:1&min_width=912",
       "lat": 41.8789,
-      "long": -87.6359
+      "long": -87.6359,
+      "website": "https://www.willistower.com/"
     },
     {
       "name": " Illinois Route 66 Hall of Fame",
@@ -18,7 +19,8 @@
       "type": [2,3],
       "image": "https://wanderdisney.com/wp-content/uploads/2020/05/46818077294_c9542bc1bc_c.jpg",
       "lat": 40.881130,
-      "long": -88.629540
+      "long": -88.629540,
+      "website": "https://www.willistower.com/"
     },
     {
       "name": "Chicago Theatre",
@@ -28,7 +30,8 @@
       "type": [4],
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Chicago_Theatre_1.jpg",
       "lat": 41.8855,
-      "long": -87.6276
+      "long": -87.6276,
+      "website": "https://www.msg.com/the-chicago-theatre"
     },
     {
       "name": "Museum of Science and Industry",
@@ -38,7 +41,8 @@
       "type": [3],
       "image": "https://www.inexhibit.com/wp-content/webp-express/webp-images/uploads/2014/11/Museum-Science-Industry-Chicago-1-870x580.jpg.webp",
       "lat": 41.8855,
-      "long": -87.6276
+      "long": -87.6276,
+      "website": "https://www.msichicago.org/"
     },
     {
       "name": "Chicago Symphony Orchestra",
@@ -48,7 +52,8 @@
       "type": [3],
       "image": "https://assets.classicfm.com/2011/24/chicago-symphony-orchestra-1-1308055271-view-0.jpg",
       "lat": 41.8970,
-      "long": -87.6251
+      "long": -87.6251,
+      "website": "https://cso.org/"
     },
     {
       "name": "Art Institute of Chicago",
@@ -58,7 +63,8 @@
       "type": [3],
       "image": "https://miro.medium.com/max/2944/1*khzyOPfTqDlRFSvRypA2uQ.jpeg",
       "lat": 41.8796,
-      "long": -87.6237
+      "long": -87.6237,
+      "website": "https://www.artic.edu/"
     },
     {
       "name": "Wrigley Field",
@@ -68,7 +74,8 @@
       "type": [6],
       "image": "https://aviewfrommyseat.com/medium/luket31-20170418190224.jpg",
       "lat": 41.9484,
-      "long": -87.6553
+      "long": -87.6553,
+      "website": "https://www.mlb.com/cubs/ballpark"
     },
     {
       "name": "Grafton Zipline",
@@ -78,7 +85,8 @@
       "type": [4],
       "image": "https://img.grouponcdn.com/deal/6nXbDLXq6sr34daVnRAh/g7-440x267/v1/sc600x600.jpg",
       "lat": 38.9696,
-      "long": -90.4361
+      "long": -90.4361,
+      "website": "https://www.aeriesview.com/zipline"
     },
     {
       "name": "Starved Rock State Park",
@@ -88,7 +96,8 @@
       "type": [4],
       "image": "https://www.starvedrocklodge.com/wp-content/uploads/2019/08/starved-rock-state-park-01-768x512.jpg",
       "lat": 41.3192,
-      "long": -89.0060
+      "long": -89.0060,
+      "website": "https://www.starvedrocklodge.com/starved-rock-state-park/"
     },
     {
       "name": "The Glen Town Center",
@@ -98,7 +107,8 @@
       "type": [5],
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/The_Glen_Town_Center_%282723219030%29.jpg",
       "lat": 42.0898,
-      "long": -87.8247
+      "long": -87.8247,
+      "website": "https://theglentowncenter.com/"
     }
   ,
     {
@@ -109,7 +119,8 @@
       "type": [2,4],
       "image": "https://navypier.org/assets/Images/hero/Dock_Cruise_1200x600-1__FocusFillWzgwMCw2MDAsIngiLDIwMF0.jpg",
       "lat": 41.8919,
-      "long": -87.6051
+      "long": -87.6051,
+      "website": "https://navypier.org/"
     },
     {
       "name": "Lincoln's New Salem Historic Site",
@@ -119,7 +130,8 @@
       "type": [2,4],
       "image": "https://www.nps.gov/liho/learn/historyculture/images/cabin.jpg?maxwidth=650&autorotate=false",
       "lat": 42.5043,
-      "long": -72.3320
+      "long": -72.3320,
+      "website": "https://www.lincolnsnewsalem.com/"
     },
     {
       "name": "Adler Planetarium",
@@ -129,7 +141,8 @@
       "type": [3],
       "image": "https://news.wttw.com/sites/default/files/styles/full/public/article/image-non-gallery/AdlerPlanetFB_0.jpg?itok=VbXo7oTM",
       "lat": 41.8663,
-      "long": -87.6068
+      "long": -87.6068,
+      "website": "https://www.adlerplanetarium.org/"
     },
     {
       "name": "Anderson Japanese Gardens",
@@ -139,7 +152,8 @@
       "type": [2,4],
       "image": "https://rotarybotanicalgardens.org/wp-content/uploads/Anderson42014.jpg.jpg",
       "lat": 42.2901,
-      "long": -89.0578
+      "long": -89.0578,
+      "website": "https://andersongardens.org/"
     },
     {
       "name": "Chicago Botanic Garden",
@@ -149,7 +163,8 @@
       "type": [2],
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Chicago_Botanic_Garden_-_Zig_Zag_Bridge.jpg",
       "lat": 42.0898,
-      "long": -87.8247
+      "long": -87.8247,
+      "website": "https://www.chicagobotanic.org/"
     },
     {
       "name": "Chestnut Mountain Resort",
@@ -159,7 +174,8 @@
       "type": [4],
       "image": "https://www.visitgalena.org/images/wp-content/2016/05/8359_Chestnut-skier_web.jpg",
       "lat": 34.1726,
-      "long": -83.8380
+      "long": -83.8380,
+      "website": "https://www.chestnutmtn.com/"
     },
     {
       "name": "Cahokia Mounds State Historic Site",
@@ -169,7 +185,8 @@
       "type": [3,4],
       "image": "https://upload.travelawaits.com/ta/uploads/2021/04/aerial-view-of-monks-mound-at7148c8.jpg",
       "lat": 38.6551,
-      "long": -90.0618
+      "long": -90.0618,
+      "website": "https://cahokiamounds.org/"
     },
     {
       "name": "Mermet Springs",
@@ -179,7 +196,8 @@
       "type": [4],
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/Mermet-springs-in-water.jpg",
       "lat": 37.2845,
-      "long": -88.8580
+      "long": -88.8580,
+      "website": "https://www.mermetsprings.com/"
     },
     {
       "name": "The Violet Hour",
@@ -189,7 +207,8 @@
       "type": [5],
       "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
       "lat": 41.9091,
-      "long": -87.6776
+      "long": -87.6776,
+      "website": "https://www.exploretock.com/theviolethour/"
     },
     {
       "name": "Brookfield Zoo",
@@ -199,7 +218,8 @@
       "type": [4],
       "image": "https://fpdcc.com/wp-content/uploads/2020/01/brookfield-zoo-underpass-may15.jpg",
       "lat": 41.8329,
-      "long": -87.8356
+      "long": -87.8356,
+      "website": "https://www.czs.org/Brookfield-ZOO/Home"
     },
     {
       "name": "Krannert Art Museum",
@@ -209,7 +229,8 @@
       "type": [3],
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/Krannert-Art-Museum.jpg",
       "lat": 40.1020,
-      "long": -88.2313
+      "long": -88.2313,
+      "website": "https://kam.illinois.edu/krannert-art-museum"
     },
     {
       "name": "Spurlock Museum",
@@ -219,7 +240,8 @@
       "type": [3],
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/Spurlock-Museum.jpg",
       "lat": 40.1076,
-      "long": -88.2208
+      "long": -88.2208,
+      "website": "https://www.spurlock.illinois.edu/"
     },
     {
       "name": "University of Illinois Memorial Stadium",
@@ -229,7 +251,8 @@
       "type": [6],
       "image": "https://cdn.vox-cdn.com/thumbor/eehfigra_eu1Uac69MH1ARBV9aE=/0x0:1069x583/1400x1400/filters:focal(305x159:475x329):format(png)/cdn.vox-cdn.com/uploads/chorus_image/image/51168015/Screen_20Shot_202016-09-21_20at_2011.07.35_20AM.0.png",
       "lat": 40.0993,
-      "long": -88.2360
+      "long": -88.2360,
+      "website": "https://fightingillini.com/facilities/memorial-stadium/64"
     },
     {
       "name": "State Farm Center",
@@ -239,7 +262,8 @@
       "type": [6],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/State_Farm_Center_Interior.jpg/220px-State_Farm_Center_Interior.jpg",
       "lat": 40.0962,
-      "long": -88.2359
+      "long": -88.2359,
+      "website": ""
     },
     {
       "name": "Sholem Aquatic Center",
@@ -249,7 +273,8 @@
       "type": [4],
       "image": "https://champaignparks.com/wp-content/uploads/2014/08/Sholem_01_mini-800x533.jpg",
       "lat": 40.1007,
-      "long": -88.2828
+      "long": -88.2828,
+      "website": ""
     },
     {
       "name": "AMC Champaign 13",
@@ -259,7 +284,8 @@
       "type": [2,4],
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/84/81/13/carmike-13.jpg?w=1200&h=-1&s=1",
       "lat": 40.1473,
-      "long": -88.2602
+      "long": -88.2602,
+      "website": ""
     },
     {
       "name": "University of Illinois Ice Arena",
@@ -269,7 +295,8 @@
       "type": [4,6],
       "image": "https://www.broeren-russo.com/wp-content/uploads/2016/07/Ice-Arena.jpg",
       "lat": 40.1058,
-      "long": -88.2325
+      "long": -88.2325,
+      "website": ""
     },
     {
       "name": "William M. Staerkel Planetarium",
@@ -279,7 +306,8 @@
       "type": [3],
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/itims/7992_020.JPG",
       "lat": 40.1322,
-      "long": -88.2914
+      "long": -88.2914,
+      "website": ""
     },
     {
       "name": "Orpheum Children's Science Museum",
@@ -289,7 +317,8 @@
       "type": [3,4],
       "image": "https://illinoisnewsroom.org/wp-content/uploads/2020/06/20200611_171435-scaled.jpg",
       "lat": 40.1195,
-      "long": -88.2424
+      "long": -88.2424,
+      "website": ""
     },
     {
       "name": "Champaign County History Museum",
@@ -299,7 +328,8 @@
       "type": [2,3],
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Champaign_County_Historical_Museum_Champaign_Illinois_from_southeast.jpg",
       "lat": 40.1165,
-      "long": -88.2385
+      "long": -88.2385,
+      "website": ""
     },
     {
       "name": "The Senior Memorial Chime of Altgeld Hall",
@@ -309,7 +339,8 @@
       "type": [2],
       "image": "https://lh3.googleusercontent.com/p/AF1QipMVVZsgWJhY5Jt5Dokgx3A8X9tfhbYhHO32GYgb=s1600-w400",
       "lat": 40.1020,
-      "long": -88.2313
+      "long": -88.2313,
+      "website": ""
     },
     {
       "name": "Chicago Sports Museum",
@@ -319,7 +350,8 @@
       "type": [3,6],
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Chicago_Sports_Museum_entrance.jpg",
       "lat": 41.8980,
-      "long": -87.6236
+      "long": -87.6236,
+      "website": ""
     },
     {
       "name": "Hancock Stadium",
@@ -329,7 +361,8 @@
       "type": [6],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/ISU_vs_Drake_at_Hancock_Stadium.jpg/255px-ISU_vs_Drake_at_Hancock_Stadium.jpg",
       "lat": 40.5123,
-      "long": -88.9965
+      "long": -88.9965,
+      "website": ""
     },
     {
       "name": "Cloud Gate/The Big Bean",
@@ -339,7 +372,8 @@
       "type": [2],
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Cloud_Gate_%28The_Bean%29_from_east%27.jpg/340px-Cloud_Gate_%28The_Bean%29_from_east%27.jpg",
       "lat": 41.8827,
-      "long": -87.6233
+      "long": -87.6233,
+      "website": ""
     },
     {
       "name": "Chicago History Museum",
@@ -349,7 +383,8 @@
       "type": [2,3],
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Chicago_History.JPG",
       "lat": 41.9117,
-      "long": -87.6317
+      "long": -87.6317,
+      "website": ""
     },
     {
       "name": "Shawnee National Forest",
@@ -359,7 +394,8 @@
       "type": [2],
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/Pine-Hills.jpg",
       "lat": 37.4922,
-      "long": -88.9339
+      "long": -88.9339,
+      "website": ""
     },
     {
       "name": "Fort De Chartres",
@@ -369,7 +405,8 @@
       "type": [2],
       "image": "http://www.fortdechartres.us/wp-content/uploads/2016/11/Fort-Arial-View-e1484356551395-480x360.jpg",
       "lat": 38.0878,
-      "long": -90.1590
+      "long": -90.1590,
+      "website": ""
     },
     {
       "name": "Chicago Cultural Center",
@@ -379,7 +416,8 @@
       "type": [2,3],
       "image": "https://cdn.choosechicago.com/uploads/2019/06/CC-Cultural-Center-Dome-2400x1633.jpg",
       "lat": 41.8838,
-      "long": -87.6250
+      "long": -87.6250,
+      "website": ""
     },
     {
       "name": "Field Museum of Natural History",
@@ -389,7 +427,8 @@
       "type": [3],
       "image": "https://www.fieldmuseum.org/sites/default/files/styles/3x2_1400w/public/2018_03_06_fieldmuseum_lhewett-01.jpg",
       "lat": 41.8663,
-      "long": -87.6170
+      "long": -87.6170,
+      "website": ""
     },
     {
       "name": "Abraham Lincoln Presidential Library & Museum",
@@ -399,7 +438,8 @@
       "type": [3],
       "image": "https://files.idss.com/C116/0dbeccfa-42ae-40e4-8c94-c8479142d6ce/5e6d064b-d1d0-4b7c-92a3-32008fc3a7ec.jpg",
       "lat": 39.8033,
-      "long": -89.6472
+      "long": -89.6472,
+      "website": ""
     },
     {
       "name": "International Museum of Surgical Science",
@@ -409,7 +449,8 @@
       "type": [3],
       "image": "https://imssusa.files.wordpress.com/2016/03/photo-4_hallofimortals.jpeg?w=1200",
       "lat": 41.9103,
-      "long": -87.6266
+      "long": -87.6266,
+      "website": ""
     },
     {
       "name": "American Writers Museum",
@@ -419,7 +460,8 @@
       "type": [2,3],
       "image": "https://149352626.v2.pressablecdn.com/wp-content/uploads/2017/10/IMG_5740-1024x768.jpg",
       "lat": 41.8856,
-      "long": -87.6249
+      "long": -87.6249,
+      "website": ""
     },
     {
       "name": "The Merchandise Mart",
@@ -429,7 +471,8 @@
       "type": [2,4],
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Merchandise_Mart.jpg",
       "lat": 41.8887,
-      "long": -87.6355
+      "long": -87.6355,
+      "website": ""
     },
     {
       "name": "Andrew Jackson Park",
@@ -439,7 +482,8 @@
       "type": [2,4],
       "image": "https://cdn.branchcms.com/JVXM9wad0E-1708/images/trails/trail-system/IMG_1968-large-2-57.1.jpg",
       "lat": 41.7809,
-      "long": -87.5802
+      "long": -87.5802,
+      "website": ""
     },
     {
       "name": "Block Museum of Art",
@@ -449,7 +493,8 @@
       "type": [2,3],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/NU_Block_Museum_of_Art.JPG/1200px-NU_Block_Museum_of_Art.JPG",
       "lat": 42.0524,
-      "long": -87.6727
+      "long": -87.6727,
+      "website": ""
     },
     {
       "name": "Illinois Holocaust Museum & Education Center",
@@ -459,7 +504,8 @@
       "type": [2,3],
       "image": "https://www.ilholocaustmuseum.org/wp-content/uploads/2020/11/museum-lobby.jpg",
       "lat": 42.0566,
-      "long": -87.7608
+      "long": -87.7608,
+      "website": ""
     },
     {
       "name": "Lincoln Monument Association",
@@ -469,7 +515,8 @@
       "type": [2],
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lincoln%27s_Tomb.JPG",
       "lat": 39.8232,
-      "long": -89.6557
+      "long": -89.6557,
+      "website": ""
     },
     {
       "name": "Oak Street Beach",
@@ -479,7 +526,8 @@
       "type": [4],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Oak_Street_Beach.jpg/250px-Oak_Street_Beach.jpg",
       "lat": 41.9030,
-      "long": -87.6228
+      "long": -87.6228,
+      "website": ""
     },
     {
       "name": "Tribune Tower",
@@ -489,7 +537,8 @@
       "type": [1,2],
       "image": "https://mansion-global-app.s3.amazonaws.com/stories/tribune-tower-one-of-chicago-s-most-recognizable-buildings-offers-luxury-living-with-a-side-of-history/assets/kZXTbRbTwN/tribtower_lead_v4_vert-2349x2349.jpeg",
       "lat": 41.8905,
-      "long": -87.6233
+      "long": -87.6233,
+      "website": ""
     }
   ]   
 }  

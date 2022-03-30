@@ -29,10 +29,8 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Objects;
 
@@ -48,7 +46,6 @@ public class ResultsActivity extends AppCompatActivity {
             actionBar.setTitle("Search Results");
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
 
         Intent dataIntent = getIntent();
         if (dataIntent != null) {
@@ -110,41 +107,29 @@ public class ResultsActivity extends AppCompatActivity {
                 .addOnSuccessListener(this, location -> {
                     if (location != null) {
                         final ListView resultsList = findViewById(R.id.resultsList);
-                        ArrayList<Attraction> attractionArray = new ArrayList<>();
                         ArrayList<Attraction2> resultArray = new ArrayList<>();
                         String attractionsJSON = loadJSONFromAsset();
                         try {
                             JSONObject jsonRootObject = new JSONObject(attractionsJSON);
                             JSONArray attractionsJSONArray = jsonRootObject.optJSONArray("Attraction");
-
                             for (int i = 0; i < Objects.requireNonNull(attractionsJSONArray).length(); i++) {
                                 JSONObject attraction = attractionsJSONArray.getJSONObject(i);
                                 String name = attraction.optString("name");
-                                Boolean bathrooms = attraction.optBoolean("bathrooms");
-                                Boolean food = attraction.optBoolean("food");
-                                Boolean accessible = attraction.optBoolean("accessible");
-                                JSONArray type = attraction.optJSONArray("type");
-                                String imageLink = attraction.optString("image");
-                                Double Lat = attraction.optDouble("lat");
-                                Double Long = attraction.optDouble("long");
-                                attractionArray.add(new Attraction(name, bathrooms, food, accessible, type, Lat, Long, imageLink));
-                            }
-                            for (int i = 0; i < attractionArray.size(); i++) {
-                                String name = attractionArray.get(i).getName();
-                                String image = attractionArray.get(i).getImage();
-                                Double Lat = attractionArray.get(i).getLat();
-                                Double Long = attractionArray.get(i).getLong();
-                                Boolean hasBathrooms = attractionArray.get(i).getBathrooms();
-                                Boolean hasFood = attractionArray.get(i).getFood();
-                                Boolean hasAccessible = attractionArray.get(i).getAccessible();
-                                JSONArray activityType = attractionArray.get(i).getActivityType();
+                                Boolean hasBathrooms = attraction.optBoolean("bathrooms");
+                                Boolean hasFood = attraction.optBoolean("food");
+                                Boolean hasAccessible = attraction.optBoolean("accessible");
+                                JSONArray activityType = attraction.optJSONArray("type");
+                                String image = attraction.optString("image");
+                                double Lat = attraction.optDouble("lat");
+                                double Long = attraction.optDouble("long");
+                                String website = attraction.optString("website");
                                 LatLng currentLocation = new LatLng(location.getLatitude(),location.getLongitude());
                                 LatLng dest = new LatLng(Lat,Long);
                                 int distance = (int) Math.round(SphericalUtil.computeDistanceBetween(currentLocation,dest));
                                 int distanceMiles = (int) Math.round(distance / 1609.34);
                                 Boolean mdr = distanceMiles < maxRange;
                                 if (checkReq(needsBathroom,hasBathrooms) && checkReq(needsFood,hasFood) && checkReq(needsAccessible, hasAccessible) && checkType(requestedType, activityType) && mdr) {
-                                    resultArray.add(new Attraction2(name,image,Integer.toString(distanceMiles)));
+                                    resultArray.add(new Attraction2(name,image,Integer.toString(distanceMiles),website));
                                 }
                             }
                             TextView nrf = findViewById(R.id.textView3);
