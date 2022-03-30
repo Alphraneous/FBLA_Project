@@ -129,8 +129,8 @@
       "accessible": true,
       "type": [2,4],
       "image": "https://www.nps.gov/liho/learn/historyculture/images/cabin.jpg?maxwidth=650&autorotate=false",
-      "lat": 42.5043,
-      "long": -72.3320,
+      "lat": 39.982110,
+      "long": -89.848150,
       "website": "https://www.lincolnsnewsalem.com/"
     },
     {
@@ -173,8 +173,8 @@
       "accessible": true,
       "type": [4],
       "image": "https://www.visitgalena.org/images/wp-content/2016/05/8359_Chestnut-skier_web.jpg",
-      "lat": 34.1726,
-      "long": -83.8380,
+      "lat": 42.319030,
+      "long": -90.393690,
       "website": "https://www.chestnutmtn.com/"
     },
     {
@@ -274,7 +274,7 @@
       "image": "https://champaignparks.com/wp-content/uploads/2014/08/Sholem_01_mini-800x533.jpg",
       "lat": 40.1007,
       "long": -88.2828,
-      "website": ""
+      "website": "https://champaignparks.com/facility/sholem-aquatic-center/"
     },
     {
       "name": "AMC Champaign 13",
@@ -285,7 +285,7 @@
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/84/81/13/carmike-13.jpg?w=1200&h=-1&s=1",
       "lat": 40.1473,
       "long": -88.2602,
-      "website": ""
+      "website": "https://www.amctheatres.com/movie-theatres/springfield-il/amc-champaign-13"
     },
     {
       "name": "University of Illinois Ice Arena",
@@ -296,7 +296,7 @@
       "image": "https://www.broeren-russo.com/wp-content/uploads/2016/07/Ice-Arena.jpg",
       "lat": 40.1058,
       "long": -88.2325,
-      "website": ""
+      "website": "https://campusrec.illinois.edu/facilities/ice-arena/"
     },
     {
       "name": "William M. Staerkel Planetarium",
@@ -307,7 +307,7 @@
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/itims/7992_020.JPG",
       "lat": 40.1322,
       "long": -88.2914,
-      "website": ""
+      "website": "https://www.parkland.edu/Audience/Community-Business/Parkland-Presents/Planetarium"
     },
     {
       "name": "Orpheum Children's Science Museum",
@@ -318,7 +318,7 @@
       "image": "https://illinoisnewsroom.org/wp-content/uploads/2020/06/20200611_171435-scaled.jpg",
       "lat": 40.1195,
       "long": -88.2424,
-      "website": ""
+      "website": "https://orpheumkids.com/"
     },
     {
       "name": "Champaign County History Museum",
@@ -329,7 +329,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Champaign_County_Historical_Museum_Champaign_Illinois_from_southeast.jpg",
       "lat": 40.1165,
       "long": -88.2385,
-      "website": ""
+      "website": "https://www.champaigncountyhistory.org/"
     },
     {
       "name": "The Senior Memorial Chime of Altgeld Hall",
@@ -340,7 +340,7 @@
       "image": "https://lh3.googleusercontent.com/p/AF1QipMVVZsgWJhY5Jt5Dokgx3A8X9tfhbYhHO32GYgb=s1600-w400",
       "lat": 40.1020,
       "long": -88.2313,
-      "website": ""
+      "website": "https://illinois.edu/chimes/"
     },
     {
       "name": "Chicago Sports Museum",
@@ -351,7 +351,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Chicago_Sports_Museum_entrance.jpg",
       "lat": 41.8980,
       "long": -87.6236,
-      "website": ""
+      "website": "https://www.chicagosportsmuseum.com/"
     },
     {
       "name": "Hancock Stadium",
@@ -362,7 +362,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/ISU_vs_Drake_at_Hancock_Stadium.jpg/255px-ISU_vs_Drake_at_Hancock_Stadium.jpg",
       "lat": 40.5123,
       "long": -88.9965,
-      "website": ""
+      "website": "https://goredbirds.com/sports/2014/5/12/Facilty_hancock_stadium.aspx"
     },
     {
       "name": "Cloud Gate/The Big Bean",
@@ -373,7 +373,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Cloud_Gate_%28The_Bean%29_from_east%27.jpg/340px-Cloud_Gate_%28The_Bean%29_from_east%27.jpg",
       "lat": 41.8827,
       "long": -87.6233,
-      "website": ""
+      "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartcloudgateinmillenniumpark.html"
     },
     {
       "name": "Chicago History Museum",
@@ -384,7 +384,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Chicago_History.JPG",
       "lat": 41.9117,
       "long": -87.6317,
-      "website": ""
+      "website": "https://www.chicagohistory.org/"
     },
     {
       "name": "Shawnee National Forest",
@@ -395,7 +395,7 @@
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/Pine-Hills.jpg",
       "lat": 37.4922,
       "long": -88.9339,
-      "website": ""
+      "website": "https://www.fs.usda.gov/shawnee"
     },
     {
       "name": "Fort De Chartres",
@@ -406,7 +406,7 @@
       "image": "http://www.fortdechartres.us/wp-content/uploads/2016/11/Fort-Arial-View-e1484356551395-480x360.jpg",
       "lat": 38.0878,
       "long": -90.1590,
-      "website": ""
+      "website": "http://www.fortdechartres.us/"
     },
     {
       "name": "Chicago Cultural Center",
@@ -417,7 +417,7 @@
       "image": "https://cdn.choosechicago.com/uploads/2019/06/CC-Cultural-Center-Dome-2400x1633.jpg",
       "lat": 41.8838,
       "long": -87.6250,
-      "website": ""
+      "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_culturalcenter.html"
     },
     {
       "name": "Field Museum of Natural History",
@@ -428,7 +428,7 @@
       "image": "https://www.fieldmuseum.org/sites/default/files/styles/3x2_1400w/public/2018_03_06_fieldmuseum_lhewett-01.jpg",
       "lat": 41.8663,
       "long": -87.6170,
-      "website": ""
+      "website": "https://www.fieldmuseum.org/"
     },
     {
       "name": "Abraham Lincoln Presidential Library & Museum",
@@ -439,7 +439,7 @@
       "image": "https://files.idss.com/C116/0dbeccfa-42ae-40e4-8c94-c8479142d6ce/5e6d064b-d1d0-4b7c-92a3-32008fc3a7ec.jpg",
       "lat": 39.8033,
       "long": -89.6472,
-      "website": ""
+      "website": "https://presidentlincoln.illinois.gov/"
     },
     {
       "name": "International Museum of Surgical Science",
@@ -450,7 +450,7 @@
       "image": "https://imssusa.files.wordpress.com/2016/03/photo-4_hallofimortals.jpeg?w=1200",
       "lat": 41.9103,
       "long": -87.6266,
-      "website": ""
+      "website": "https://imss.org/"
     },
     {
       "name": "American Writers Museum",
@@ -461,7 +461,7 @@
       "image": "https://149352626.v2.pressablecdn.com/wp-content/uploads/2017/10/IMG_5740-1024x768.jpg",
       "lat": 41.8856,
       "long": -87.6249,
-      "website": ""
+      "website": "https://americanwritersmuseum.org/"
     },
     {
       "name": "The Merchandise Mart",
@@ -472,7 +472,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Merchandise_Mart.jpg",
       "lat": 41.8887,
       "long": -87.6355,
-      "website": ""
+      "website": "https://www.themart.com/"
     },
     {
       "name": "Andrew Jackson Park",
@@ -483,7 +483,7 @@
       "image": "https://cdn.branchcms.com/JVXM9wad0E-1708/images/trails/trail-system/IMG_1968-large-2-57.1.jpg",
       "lat": 41.7809,
       "long": -87.5802,
-      "website": ""
+      "website": "https://www.chicagoparkdistrict.com/parks-facilities/jackson-park"
     },
     {
       "name": "Block Museum of Art",
@@ -494,7 +494,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/NU_Block_Museum_of_Art.JPG/1200px-NU_Block_Museum_of_Art.JPG",
       "lat": 42.0524,
       "long": -87.6727,
-      "website": ""
+      "website": "https://www.blockmuseum.northwestern.edu/"
     },
     {
       "name": "Illinois Holocaust Museum & Education Center",
@@ -505,7 +505,7 @@
       "image": "https://www.ilholocaustmuseum.org/wp-content/uploads/2020/11/museum-lobby.jpg",
       "lat": 42.0566,
       "long": -87.7608,
-      "website": ""
+      "website": "https://www.ilholocaustmuseum.org/"
     },
     {
       "name": "Lincoln Monument Association",
@@ -516,7 +516,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lincoln%27s_Tomb.JPG",
       "lat": 39.8232,
       "long": -89.6557,
-      "website": ""
+      "website": "https://lincolntomb.org/"
     },
     {
       "name": "Oak Street Beach",
@@ -527,7 +527,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Oak_Street_Beach.jpg/250px-Oak_Street_Beach.jpg",
       "lat": 41.9030,
       "long": -87.6228,
-      "website": ""
+      "website": "https://www.chicagoparkdistrict.com/parks-facilities/oak-street-beach"
     },
     {
       "name": "Tribune Tower",
@@ -538,7 +538,7 @@
       "image": "https://mansion-global-app.s3.amazonaws.com/stories/tribune-tower-one-of-chicago-s-most-recognizable-buildings-offers-luxury-living-with-a-side-of-history/assets/kZXTbRbTwN/tribtower_lead_v4_vert-2349x2349.jpeg",
       "lat": 41.8905,
       "long": -87.6233,
-      "website": ""
+      "website": "https://tribunetower.com/"
     }
   ]   
 }  
