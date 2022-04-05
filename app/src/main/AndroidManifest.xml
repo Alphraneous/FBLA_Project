@@ -14,8 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FBLA_Project">
         <activity
+            android:name=".moreActivity"
+            android:exported="false" />
+        <activity
             android:name=".SelectActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,8 +27,7 @@
         </activity>
         <activity
             android:name=".ResultsActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>

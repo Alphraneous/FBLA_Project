@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.DataSetObserver;
 import android.net.Uri;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +12,11 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 import com.squareup.picasso.Picasso;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
-class CustomAdapter implements ListAdapter {
+class CustomAdapter implements ListAdapter, Serializable {
     ArrayList<Attraction2> arrayList;
     Context context;
     public CustomAdapter(Context context, ArrayList<Attraction2> arrayList) {
@@ -59,8 +62,8 @@ class CustomAdapter implements ListAdapter {
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Uri uri = Uri.parse(subjectData.Website);
-                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    Intent intent = new Intent(context, moreActivity.class);
+                    intent.putExtra("data", (Serializable) subjectData);
                     context.startActivity(intent);
                 }
             });

@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/resultImage"
-        android:src="@drawable/ic_launcher_background"
-        android:layout_width="60dp"
-        android:layout_height="60dp" />
+        android:layout_width="78dp"
+        android:layout_height="74dp"
+        android:src="@drawable/ic_launcher_background" />
 
     <TextView
         android:id="@+id/resultName"
-        android:text="Android Name"
-        android:textSize="20sp"
-        android:layout_marginTop="8dp"
-        android:maxLines="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/resultImage"
-        android:layout_toEndOf="@+id/resultImage"
+        android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp" />
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/resultImage"
+        android:layout_toRightOf="@+id/resultImage"
+        android:text="Android Name"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/distanceText"
-        android:text="5 Miles Away"
-        android:textSize="11sp"
-        android:layout_below="@id/resultName"
-        android:maxLines="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/resultImage"
-        android:layout_toEndOf="@+id/resultImage"
+        android:layout_below="@id/resultName"
+        android:layout_marginStart="12sp"
         android:layout_marginLeft="12sp"
-        android:layout_marginStart="12sp" />
+        android:layout_toEndOf="@+id/resultImage"
+        android:layout_toRightOf="@+id/resultImage"
+        android:maxLines="1"
+        android:text="5 Miles Away"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/ratingImage"
+        android:layout_width="116dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/distanceText"
+        android:layout_toRightOf="@id/resultImage"
+        app:srcCompat="@drawable/star_rating_0_of_5" />
 
 </RelativeLayout>
