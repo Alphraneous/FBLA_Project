@@ -107,7 +107,7 @@ public class ResultsActivity extends AppCompatActivity {
                 .addOnSuccessListener(this, location -> {
                     if (location != null) {
                         final ListView resultsList = findViewById(R.id.resultsList);
-                        ArrayList<Attraction2> resultArray = new ArrayList<>();
+                        ArrayList<Attraction> resultArray = new ArrayList<>();
                         String attractionsJSON = loadJSONFromAsset();
                         try {
                             JSONObject jsonRootObject = new JSONObject(attractionsJSON);
@@ -129,7 +129,7 @@ public class ResultsActivity extends AppCompatActivity {
                                 int distanceMiles = (int) Math.round(distance / 1609.34);
                                 Boolean mdr = distanceMiles < maxRange;
                                 if (checkReq(needsBathroom,hasBathrooms) && checkReq(needsFood,hasFood) && checkReq(needsAccessible, hasAccessible) && checkType(requestedType, activityType) && mdr) {
-                                    resultArray.add(new Attraction2(name,image,Integer.toString(distanceMiles),website));
+                                    resultArray.add(new Attraction(name,image,Integer.toString(distanceMiles),website));
                                 }
                             }
                             TextView nrf = findViewById(R.id.textView3);

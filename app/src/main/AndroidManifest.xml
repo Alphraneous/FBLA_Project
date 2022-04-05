@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FBLA_Project">
         <activity
-            android:name=".moreActivity"
+            android:name=".MoreActivity"
             android:exported="false" />
         <activity
             android:name=".SelectActivity"

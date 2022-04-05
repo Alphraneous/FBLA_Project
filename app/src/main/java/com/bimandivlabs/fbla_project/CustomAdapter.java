@@ -3,8 +3,6 @@ package com.bimandivlabs.fbla_project;
 import android.content.Context;
 import android.content.Intent;
 import android.database.DataSetObserver;
-import android.net.Uri;
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,9 +15,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 class CustomAdapter implements ListAdapter, Serializable {
-    ArrayList<Attraction2> arrayList;
+    ArrayList<Attraction> arrayList;
     Context context;
-    public CustomAdapter(Context context, ArrayList<Attraction2> arrayList) {
+    public CustomAdapter(Context context, ArrayList<Attraction> arrayList) {
         this.arrayList=arrayList;
         this.context=context;
     }
@@ -55,14 +53,14 @@ class CustomAdapter implements ListAdapter, Serializable {
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Attraction2 subjectData = arrayList.get(position);
+        Attraction subjectData = arrayList.get(position);
         if(convertView == null) {
             LayoutInflater layoutInflater = LayoutInflater.from(context);
             convertView = layoutInflater.inflate(R.layout.list_row, null);
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(context, moreActivity.class);
+                    Intent intent = new Intent(context, MoreActivity.class);
                     intent.putExtra("data", (Serializable) subjectData);
                     context.startActivity(intent);
                 }
@@ -70,7 +68,7 @@ class CustomAdapter implements ListAdapter, Serializable {
             TextView name = convertView.findViewById(R.id.resultName);
             TextView distance = convertView.findViewById(R.id.distanceText);
             ImageView image = convertView.findViewById(R.id.resultImage);
-            name.setText(subjectData.SubjectName);
+            name.setText(subjectData.Name);
             if (distance.getText() == ("1")) {
                 distance.setText(subjectData.Distance + " Mile Away");
             } else {
