@@ -2,6 +2,7 @@ package com.bimandivlabs.fbla_project;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.Menu;
@@ -54,7 +55,8 @@ public class ResultsActivity extends AppCompatActivity {
             Boolean needsBathroom = dataIntent.getBooleanExtra("bathrooms",false);
             Boolean needsFood = dataIntent.getBooleanExtra("food",false);
             Boolean needsAccessible = dataIntent.getBooleanExtra("accessible",false);
-            runChecks(needsBathroom, needsFood, needsAccessible, requestedType, maxRange);
+            Integer maxPrice = dataIntent.getIntExtra("maxPrice",25);
+            runChecks(needsBathroom, needsFood, needsAccessible, requestedType, maxRange, maxPrice);
         }
     }
 
@@ -86,7 +88,7 @@ public class ResultsActivity extends AppCompatActivity {
 
 
 
-    public void runChecks(Boolean needsBathroom, Boolean needsFood, Boolean needsAccessible, Integer requestedType, Integer maxRange) {
+    public void runChecks(Boolean needsBathroom, Boolean needsFood, Boolean needsAccessible, Integer requestedType, Integer maxRange, Integer maxPrice) {
         FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
@@ -119,6 +121,7 @@ public class ResultsActivity extends AppCompatActivity {
                                 Boolean hasFood = attraction.optBoolean("food");
                                 Boolean hasAccessible = attraction.optBoolean("accessible");
                                 JSONArray activityType = attraction.optJSONArray("type");
+                                Integer price = attraction.optInt("price",15);
                                 String image = attraction.optString("image");
                                 double Lat = attraction.optDouble("lat");
                                 double Long = attraction.optDouble("long");
@@ -128,8 +131,8 @@ public class ResultsActivity extends AppCompatActivity {
                                 int distance = (int) Math.round(SphericalUtil.computeDistanceBetween(currentLocation,dest));
                                 int distanceMiles = (int) Math.round(distance / 1609.34);
                                 Boolean mdr = distanceMiles < maxRange;
-                                if (checkReq(needsBathroom,hasBathrooms) && checkReq(needsFood,hasFood) && checkReq(needsAccessible, hasAccessible) && checkType(requestedType, activityType) && mdr) {
-                                    resultArray.add(new Attraction(name,image,Integer.toString(distanceMiles),website));
+                                if (checkReq(needsBathroom,hasBathrooms) && checkReq(needsFood,hasFood) && checkReq(needsAccessible, hasAccessible) && checkType(requestedType, activityType) && mdr && (price <= maxPrice)) {
+                                    resultArray.add(new Attraction(i,name,image,Integer.toString(distanceMiles),website,4,100));
                                 }
                             }
                             TextView nrf = findViewById(R.id.textView3);
@@ -138,6 +141,8 @@ public class ResultsActivity extends AppCompatActivity {
                                 Collections.sort(resultArray);
                                 CustomAdapter customAdapter = new CustomAdapter(ResultsActivity.this, resultArray);
                                 resultsList.setAdapter(customAdapter);
+                                Toast toast = Toast.makeText(ResultsActivity.this, resultArray.size() + " Results Found", Toast.LENGTH_LONG);
+                                toast.show();
                                 nrf.setVisibility(View.GONE);
                                 nrf2.setVisibility(View.GONE);
                                 resultsList.setVisibility(View.VISIBLE);

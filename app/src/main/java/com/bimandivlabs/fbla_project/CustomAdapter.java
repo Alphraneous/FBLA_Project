@@ -14,7 +14,7 @@ import com.squareup.picasso.Picasso;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-class CustomAdapter implements ListAdapter, Serializable {
+class CustomAdapter implements ListAdapter{
     ArrayList<Attraction> arrayList;
     Context context;
     public CustomAdapter(Context context, ArrayList<Attraction> arrayList) {
@@ -69,7 +69,7 @@ class CustomAdapter implements ListAdapter, Serializable {
             TextView distance = convertView.findViewById(R.id.distanceText);
             ImageView image = convertView.findViewById(R.id.resultImage);
             name.setText(subjectData.Name);
-            if (distance.getText() == ("1")) {
+            if (subjectData.Distance.equals("1")) {
                 distance.setText(subjectData.Distance + " Mile Away");
             } else {
                 distance.setText(subjectData.Distance + " Miles Away");
@@ -78,6 +78,22 @@ class CustomAdapter implements ListAdapter, Serializable {
             Picasso.with(context)
                     .load(subjectData.Image)
                     .into(image);
+
+            Integer rating = subjectData.Rating;
+            ImageView ratingView = convertView.findViewById(R.id.ratingImage);
+            if (rating == 0) {
+                ratingView.setImageResource(R.drawable.star_rating_0_of_5);
+            } else if (rating == 1) {
+                ratingView.setImageResource(R.drawable.star_rating_1_of_5);
+            } else if (rating == 2) {
+                ratingView.setImageResource(R.drawable.star_rating_2_of_5);
+            } else if (rating == 3) {
+                ratingView.setImageResource(R.drawable.star_rating_3_of_5);
+            } else if (rating == 4) {
+                ratingView.setImageResource(R.drawable.star_rating_4_of_5);
+            } else {
+                ratingView.setImageResource(R.drawable.star_rating_5_of_5);
+            }
         }
         return convertView;
     }

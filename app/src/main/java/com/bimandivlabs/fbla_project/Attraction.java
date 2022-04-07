@@ -1,15 +1,23 @@
 package com.bimandivlabs.fbla_project;
 
-public class Attraction implements Comparable<Attraction> {
+import java.io.Serializable;
+
+public class Attraction implements Comparable<Attraction>, Serializable {
+    Integer ID;
     String Name;
     String Image;
     String Distance;
     String Website;
-    public Attraction(String subjectName, String image, String distance, String website) {
+    Integer Rating;
+    Integer Price;
+    public Attraction(Integer id, String subjectName, String image, String distance, String website,Integer rating,Integer price) {
+        this.ID = id;
         this.Name = subjectName;
         this.Image = image;
         this.Distance = distance;
         this.Website = website;
+        this.Price = price;
+        this.Rating = rating;
     }
 
     public int compareTo(Attraction attraction)

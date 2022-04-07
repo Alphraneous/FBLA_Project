@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class SelectActivity extends AppCompatActivity {
     int distanceMiles;
+    int maxPrice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +25,11 @@ public class SelectActivity extends AppCompatActivity {
         }
         SeekBar distanceBar = findViewById(R.id.seekBar);
         TextView distanceText = findViewById(R.id.textView2);
+        SeekBar priceBar = findViewById(R.id.seekBar2);
+        TextView priceText = findViewById(R.id.textView6);
         distanceMiles = distanceBar.getProgress()*20;
         distanceText.setText("Within: " + distanceMiles + " Miles");
+        priceText.setText("Under $60");
         CheckBox bathrooms = findViewById(R.id.bathroomCheckbox);
         CheckBox food = findViewById(R.id.foodCheckbox);
         CheckBox accessible = findViewById(R.id.accessibleCheckbox);
@@ -56,6 +60,44 @@ public class SelectActivity extends AppCompatActivity {
 
 
         });
+
+        priceBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int pos, boolean b) {
+                if (pos == 0) {
+                    maxPrice = 0;
+                    priceText.setText("Free");
+                } else if (pos == 6) {
+                    maxPrice = 1000000000;
+                    priceText.setText("No price limit");
+                } else if (pos == 1) {
+                    maxPrice = 10;
+                    priceText.setText("Under $" + maxPrice);
+                } else if (pos == 2) {
+                    maxPrice = 25;
+                    priceText.setText("Under $" + maxPrice);
+                } else if (pos == 3) {
+                    maxPrice = 60;
+                    priceText.setText("Under $" + maxPrice);
+                } else if (pos == 4) {
+                    maxPrice = 100;
+                    priceText.setText("Under $" + maxPrice);
+                } else if (pos == 5) {
+                    maxPrice = 200;
+                    priceText.setText("Under $" + maxPrice);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
         Button searchButton = findViewById(R.id.button);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +108,7 @@ public class SelectActivity extends AppCompatActivity {
                 intent.putExtra("food",food.isChecked());
                 intent.putExtra("accessible",accessible.isChecked());
                 intent.putExtra("type",type.getSelectedItemPosition());
+                intent.putExtra("maxPrice",maxPrice);
                 startActivity(intent);
             }
         });
