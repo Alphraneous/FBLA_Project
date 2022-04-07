@@ -121,18 +121,19 @@ public class ResultsActivity extends AppCompatActivity {
                                 Boolean hasFood = attraction.optBoolean("food");
                                 Boolean hasAccessible = attraction.optBoolean("accessible");
                                 JSONArray activityType = attraction.optJSONArray("type");
-                                Integer price = attraction.optInt("price",15);
                                 String image = attraction.optString("image");
                                 double Lat = attraction.optDouble("lat");
                                 double Long = attraction.optDouble("long");
                                 String website = attraction.optString("website");
+                                Integer rating = attraction.optInt("rating",0);
+                                Integer price = attraction.optInt("price",0);
                                 LatLng currentLocation = new LatLng(location.getLatitude(),location.getLongitude());
                                 LatLng dest = new LatLng(Lat,Long);
                                 int distance = (int) Math.round(SphericalUtil.computeDistanceBetween(currentLocation,dest));
                                 int distanceMiles = (int) Math.round(distance / 1609.34);
                                 Boolean mdr = distanceMiles < maxRange;
                                 if (checkReq(needsBathroom,hasBathrooms) && checkReq(needsFood,hasFood) && checkReq(needsAccessible, hasAccessible) && checkType(requestedType, activityType) && mdr && (price <= maxPrice)) {
-                                    resultArray.add(new Attraction(i,name,image,Integer.toString(distanceMiles),website,4,100));
+                                    resultArray.add(new Attraction(i,name,image,Integer.toString(distanceMiles),website,rating,price));
                                 }
                             }
                             TextView nrf = findViewById(R.id.textView3);
