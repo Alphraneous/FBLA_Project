@@ -125,7 +125,7 @@ public class ResultsActivity extends AppCompatActivity {
                                 double Lat = attraction.optDouble("lat");
                                 double Long = attraction.optDouble("long");
                                 String website = attraction.optString("website");
-                                String address = attraction.optString("address");
+                                String address = attraction.optString("address","null");
                                 Integer rating = attraction.optInt("rating",0);
                                 Integer price = attraction.optInt("price",0);
                                 LatLng currentLocation = new LatLng(location.getLatitude(),location.getLongitude());

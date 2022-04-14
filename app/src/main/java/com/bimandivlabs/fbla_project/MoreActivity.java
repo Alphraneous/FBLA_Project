@@ -90,20 +90,23 @@ public class MoreActivity extends AppCompatActivity {
         TextView priceText = findViewById(R.id.priceView);
         if (price == 0) {
             priceText.setText("Free");
-        }else if (price <= 10) {
+        }else if (price < 10) {
             priceText.setText("$");
-        } else if (price <= 25) {
+        } else if (price < 25) {
             priceText.setText("$$");
-        } else if (price <= 60) {
+        } else if (price < 60) {
             priceText.setText("$$$");
-        } else if (price <= 100) {
+        } else if (price < 100) {
             priceText.setText("$$$$");
-        } else if (price <= 200) {
+        } else if (price < 200) {
             priceText.setText("$$$$$");
         } else {
             priceText.setText("$$$$$$");
         }
 
+        //Sets the text for address
+        TextView addressView = findViewById(R.id.addressView);
+        addressView.setText(data.Address);
         //Sets the image for rating
         Integer rating = data.Rating;
         ImageView ratingView = findViewById(R.id.ratingView);

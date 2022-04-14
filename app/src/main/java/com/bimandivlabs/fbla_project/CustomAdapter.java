@@ -94,8 +94,6 @@ class CustomAdapter implements ListAdapter{
             } else {
                 ratingView.setImageResource(R.drawable.star_rating_5_of_5);
             }
-            TextView addressView = convertView.findViewById(R.id.addressView);
-            addressView.setText(subjectData.Address);
         }
         return convertView;
     }

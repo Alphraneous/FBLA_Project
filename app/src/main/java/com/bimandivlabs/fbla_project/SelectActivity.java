@@ -27,14 +27,15 @@ public class SelectActivity extends AppCompatActivity {
         TextView distanceText = findViewById(R.id.textView2);
         SeekBar priceBar = findViewById(R.id.seekBar2);
         TextView priceText = findViewById(R.id.textView6);
-        distanceMiles = distanceBar.getProgress()*20;
         distanceText.setText("Within: " + distanceMiles + " Miles");
         priceText.setText("Under $60");
         CheckBox bathrooms = findViewById(R.id.bathroomCheckbox);
         CheckBox food = findViewById(R.id.foodCheckbox);
         CheckBox accessible = findViewById(R.id.accessibleCheckbox);
         Spinner type = findViewById(R.id.spinner);
-        distanceBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        distanceMiles = distanceBar.getProgress()*20;
+        maxPrice = 60;
+                distanceBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int pos, boolean b) {
                 if(pos == 0) {
