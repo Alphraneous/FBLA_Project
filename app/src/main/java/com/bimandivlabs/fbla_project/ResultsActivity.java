@@ -125,6 +125,7 @@ public class ResultsActivity extends AppCompatActivity {
                                 double Lat = attraction.optDouble("lat");
                                 double Long = attraction.optDouble("long");
                                 String website = attraction.optString("website");
+                                String address = attraction.optString("address");
                                 Integer rating = attraction.optInt("rating",0);
                                 Integer price = attraction.optInt("price",0);
                                 LatLng currentLocation = new LatLng(location.getLatitude(),location.getLongitude());
@@ -133,7 +134,7 @@ public class ResultsActivity extends AppCompatActivity {
                                 int distanceMiles = (int) Math.round(distance / 1609.34);
                                 Boolean mdr = distanceMiles < maxRange;
                                 if (checkReq(needsBathroom,hasBathrooms) && checkReq(needsFood,hasFood) && checkReq(needsAccessible, hasAccessible) && checkType(requestedType, activityType) && mdr && (price <= maxPrice)) {
-                                    resultArray.add(new Attraction(i,name,image,Integer.toString(distanceMiles),website,rating,price));
+                                    resultArray.add(new Attraction(i,name,image,Integer.toString(distanceMiles),website,rating,price,address));
                                 }
                             }
                             TextView nrf = findViewById(R.id.textView3);

@@ -9,7 +9,10 @@
       "image": "https://img.static-kl.com/images/media/0E7A5386-D2C1-4644-968B4385D504F819?aspect_ratio=1:1&min_width=912",
       "lat": 41.8789,
       "long": -87.6359,
-      "website": "https://www.willistower.com/"
+      "website": "https://www.willistower.com/",
+      "rating": 1,
+      "price": 10,
+      "address": "233 S Wacker Dr, Chicago, IL 60606"
     },
     {
       "name": " Illinois Route 66 Hall of Fame",
@@ -20,7 +23,10 @@
       "image": "https://wanderdisney.com/wp-content/uploads/2020/05/46818077294_c9542bc1bc_c.jpg",
       "lat": 40.881130,
       "long": -88.629540,
-      "website": "https://www.willistower.com/"
+      "website": "https://www.willistower.com/",
+      "rating": 1,
+      "price": 10,
+      "address": "110 W Howard St, Pontiac, IL 61764"
     },
     {
       "name": "Chicago Theatre",
@@ -31,7 +37,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Chicago_Theatre_1.jpg",
       "lat": 41.8855,
       "long": -87.6276,
-      "website": "https://www.msg.com/the-chicago-theatre"
+      "website": "https://www.msg.com/the-chicago-theatre",
+      "rating": 1,
+      "price": 10,
+      "address": "175 N State St, Chicago, IL 60601"
     },
     {
       "name": "Museum of Science and Industry",
@@ -42,7 +51,10 @@
       "image": "https://www.inexhibit.com/wp-content/webp-express/webp-images/uploads/2014/11/Museum-Science-Industry-Chicago-1-870x580.jpg.webp",
       "lat": 41.8855,
       "long": -87.6276,
-      "website": "https://www.msichicago.org/"
+      "website": "https://www.msichicago.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "5700 DuSable Lake Shore Dr, Chicago, IL 60637"
     },
     {
       "name": "Chicago Symphony Orchestra",
@@ -53,7 +65,10 @@
       "image": "https://assets.classicfm.com/2011/24/chicago-symphony-orchestra-1-1308055271-view-0.jpg",
       "lat": 41.8970,
       "long": -87.6251,
-      "website": "https://cso.org/"
+      "website": "https://cso.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "220 S Michigan Ave, Chicago, IL 60604"
     },
     {
       "name": "Art Institute of Chicago",
@@ -64,7 +79,10 @@
       "image": "https://miro.medium.com/max/2944/1*khzyOPfTqDlRFSvRypA2uQ.jpeg",
       "lat": 41.8796,
       "long": -87.6237,
-      "website": "https://www.artic.edu/"
+      "website": "https://www.artic.edu/",
+      "rating": 1,
+      "price": 10,
+      "address": "111 S Michigan Ave, Chicago, IL 60603"
     },
     {
       "name": "Wrigley Field",
@@ -75,7 +93,10 @@
       "image": "https://aviewfrommyseat.com/medium/luket31-20170418190224.jpg",
       "lat": 41.9484,
       "long": -87.6553,
-      "website": "https://www.mlb.com/cubs/ballpark"
+      "website": "https://www.mlb.com/cubs/ballpark",
+      "rating": 1,
+      "price": 10,
+      "address": "1060 W Addison St, Chicago, IL 60613"
     },
     {
       "name": "Grafton Zipline",
@@ -86,7 +107,10 @@
       "image": "https://img.grouponcdn.com/deal/6nXbDLXq6sr34daVnRAh/g7-440x267/v1/sc600x600.jpg",
       "lat": 38.9696,
       "long": -90.4361,
-      "website": "https://www.aeriesview.com/zipline"
+      "website": "https://www.aeriesview.com/zipline",
+      "rating": 1,
+      "price": 10,
+      "address": "14 W Main St, Grafton, IL 62037"
     },
     {
       "name": "Starved Rock State Park",
@@ -97,7 +121,10 @@
       "image": "https://www.starvedrocklodge.com/wp-content/uploads/2019/08/starved-rock-state-park-01-768x512.jpg",
       "lat": 41.3192,
       "long": -89.0060,
-      "website": "https://www.starvedrocklodge.com/starved-rock-state-park/"
+      "website": "https://www.starvedrocklodge.com/starved-rock-state-park/",
+      "rating": 1,
+      "price": 10,
+      "address": "2678 E 875th Rd, Oglesby, IL 61348"
     },
     {
       "name": "The Glen Town Center",
@@ -108,7 +135,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/The_Glen_Town_Center_%282723219030%29.jpg",
       "lat": 42.0898,
       "long": -87.8247,
-      "website": "https://theglentowncenter.com/"
+      "website": "https://theglentowncenter.com/",
+      "rating": 1,
+      "price": 10,
+      "address": "2030 Tower Dr, Glenview, IL 60026"
     }
   ,
     {
@@ -120,7 +150,10 @@
       "image": "https://navypier.org/assets/Images/hero/Dock_Cruise_1200x600-1__FocusFillWzgwMCw2MDAsIngiLDIwMF0.jpg",
       "lat": 41.8919,
       "long": -87.6051,
-      "website": "https://navypier.org/"
+      "website": "https://navypier.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "600 E Grand Ave, Chicago, IL 60611"
     },
     {
       "name": "Lincoln's New Salem Historic Site",
@@ -131,7 +164,10 @@
       "image": "https://www.nps.gov/liho/learn/historyculture/images/cabin.jpg?maxwidth=650&autorotate=false",
       "lat": 39.982110,
       "long": -89.848150,
-      "website": "https://www.lincolnsnewsalem.com/"
+      "website": "https://www.lincolnsnewsalem.com/",
+      "rating": 1,
+      "price": 10,
+      "address": "5588 History Ln, Petersburg, IL 62675"
     },
     {
       "name": "Adler Planetarium",
@@ -142,7 +178,10 @@
       "image": "https://news.wttw.com/sites/default/files/styles/full/public/article/image-non-gallery/AdlerPlanetFB_0.jpg?itok=VbXo7oTM",
       "lat": 41.8663,
       "long": -87.6068,
-      "website": "https://www.adlerplanetarium.org/"
+      "website": "https://www.adlerplanetarium.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "1300 S Lake Shore Dr, Chicago, IL 60605"
     },
     {
       "name": "Anderson Japanese Gardens",
@@ -153,7 +192,10 @@
       "image": "https://rotarybotanicalgardens.org/wp-content/uploads/Anderson42014.jpg.jpg",
       "lat": 42.2901,
       "long": -89.0578,
-      "website": "https://andersongardens.org/"
+      "website": "https://andersongardens.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "318 Spring Creek Rd, Rockford, IL 61107"
     },
     {
       "name": "Chicago Botanic Garden",
@@ -164,7 +206,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Chicago_Botanic_Garden_-_Zig_Zag_Bridge.jpg",
       "lat": 42.0898,
       "long": -87.8247,
-      "website": "https://www.chicagobotanic.org/"
+      "website": "https://www.chicagobotanic.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "1000 Lake Cook Rd, Glencoe, IL 60022"
     },
     {
       "name": "Chestnut Mountain Resort",
@@ -175,7 +220,10 @@
       "image": "https://www.visitgalena.org/images/wp-content/2016/05/8359_Chestnut-skier_web.jpg",
       "lat": 42.319030,
       "long": -90.393690,
-      "website": "https://www.chestnutmtn.com/"
+      "website": "https://www.chestnutmtn.com/",
+      "rating": 1,
+      "price": 10,
+      "address": "8700 W Chestnut Mountain Rd, Galena, IL 61036"
     },
     {
       "name": "Cahokia Mounds State Historic Site",
@@ -186,7 +234,10 @@
       "image": "https://upload.travelawaits.com/ta/uploads/2021/04/aerial-view-of-monks-mound-at7148c8.jpg",
       "lat": 38.6551,
       "long": -90.0618,
-      "website": "https://cahokiamounds.org/"
+      "website": "https://cahokiamounds.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "Collinsville, IL"
     },
     {
       "name": "Mermet Springs",
@@ -197,7 +248,10 @@
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/Mermet-springs-in-water.jpg",
       "lat": 37.2845,
       "long": -88.8580,
-      "website": "https://www.mermetsprings.com/"
+      "website": "https://www.mermetsprings.com/",
+      "rating": 1,
+      "price": 10,
+      "address": "6724 N, US-45, Belknap, IL 62908"
     },
     {
       "name": "The Violet Hour",
@@ -208,7 +262,10 @@
       "image": "https://th.bing.com/th/id/R.e4bb018bb9d135164a1655737932961e?rik=5qSDgeuCilPuKQ&riu=http%3a%2f%2fwww.chicagogenx.com%2fwp-content%2fuploads%2f2017%2f12%2fThe-Violet-Hour-Chairs.jpg&ehk=pwHrL912oZRkNALI72oxPIBoXnutUjM%2fo9KRuO7h4yQ%3d&risl=&pid=ImgRaw&r=0",
       "lat": 41.9091,
       "long": -87.6776,
-      "website": "https://www.exploretock.com/theviolethour/"
+      "website": "https://www.exploretock.com/theviolethour/",
+      "rating": 1,
+      "price": 10,
+      "address": "1520 N Damen Ave, Chicago, IL 60622"
     },
     {
       "name": "Brookfield Zoo",
@@ -219,7 +276,10 @@
       "image": "https://fpdcc.com/wp-content/uploads/2020/01/brookfield-zoo-underpass-may15.jpg",
       "lat": 41.8329,
       "long": -87.8356,
-      "website": "https://www.czs.org/Brookfield-ZOO/Home"
+      "website": "https://www.czs.org/Brookfield-ZOO/Home",
+      "rating": 1,
+      "price": 10,
+      "address": "8400 W 31st St, Brookfield, IL 60513"
     },
     {
       "name": "Krannert Art Museum",
@@ -230,7 +290,10 @@
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/Krannert-Art-Museum.jpg",
       "lat": 40.1020,
       "long": -88.2313,
-      "website": "https://kam.illinois.edu/krannert-art-museum"
+      "website": "https://kam.illinois.edu/krannert-art-museum",
+      "rating": 1,
+      "price": 10,
+      "address": "500 E Peabody Dr, Champaign, IL 61820"
     },
     {
       "name": "Spurlock Museum",
@@ -241,7 +304,10 @@
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/Spurlock-Museum.jpg",
       "lat": 40.1076,
       "long": -88.2208,
-      "website": "https://www.spurlock.illinois.edu/"
+      "website": "https://www.spurlock.illinois.edu/",
+      "rating": 1,
+      "price": 10,
+      "address": "600 S Gregory St, Urbana, IL 61801"
     },
     {
       "name": "University of Illinois Memorial Stadium",
@@ -252,7 +318,10 @@
       "image": "https://cdn.vox-cdn.com/thumbor/eehfigra_eu1Uac69MH1ARBV9aE=/0x0:1069x583/1400x1400/filters:focal(305x159:475x329):format(png)/cdn.vox-cdn.com/uploads/chorus_image/image/51168015/Screen_20Shot_202016-09-21_20at_2011.07.35_20AM.0.png",
       "lat": 40.0993,
       "long": -88.2360,
-      "website": "https://fightingillini.com/facilities/memorial-stadium/64"
+      "website": "https://fightingillini.com/facilities/memorial-stadium/64",
+      "rating": 1,
+      "price": 10,
+      "address": "1402 S 1st St, Champaign, IL 61820"
     },
     {
       "name": "State Farm Center",
@@ -263,7 +332,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/State_Farm_Center_Interior.jpg/220px-State_Farm_Center_Interior.jpg",
       "lat": 40.0962,
       "long": -88.2359,
-      "website": ""
+      "website": "",
+      "rating": 1,
+      "price": 10,
+      "address": "1800 S 1st St, Champaign, IL 61820"
     },
     {
       "name": "Sholem Aquatic Center",
@@ -274,7 +346,10 @@
       "image": "https://champaignparks.com/wp-content/uploads/2014/08/Sholem_01_mini-800x533.jpg",
       "lat": 40.1007,
       "long": -88.2828,
-      "website": "https://champaignparks.com/facility/sholem-aquatic-center/"
+      "website": "https://champaignparks.com/facility/sholem-aquatic-center/",
+      "rating": 1,
+      "price": 10,
+      "address": "2205 Sangamon Dr, Champaign, IL 61821"
     },
     {
       "name": "AMC Champaign 13",
@@ -285,7 +360,10 @@
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/84/81/13/carmike-13.jpg?w=1200&h=-1&s=1",
       "lat": 40.1473,
       "long": -88.2602,
-      "website": "https://www.amctheatres.com/movie-theatres/springfield-il/amc-champaign-13"
+      "website": "https://www.amctheatres.com/movie-theatres/springfield-il/amc-champaign-13",
+      "rating": 1,
+      "price": 10,
+      "address": "910 Meijer Dr, Champaign, IL 61822"
     },
     {
       "name": "University of Illinois Ice Arena",
@@ -296,7 +374,10 @@
       "image": "https://www.broeren-russo.com/wp-content/uploads/2016/07/Ice-Arena.jpg",
       "lat": 40.1058,
       "long": -88.2325,
-      "website": "https://campusrec.illinois.edu/facilities/ice-arena/"
+      "website": "https://campusrec.illinois.edu/facilities/ice-arena/",
+      "rating": 1,
+      "price": 10,
+      "address": "406 E Armory Ave, Champaign, IL 61820"
     },
     {
       "name": "William M. Staerkel Planetarium",
@@ -307,7 +388,10 @@
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/itims/7992_020.JPG",
       "lat": 40.1322,
       "long": -88.2914,
-      "website": "https://www.parkland.edu/Audience/Community-Business/Parkland-Presents/Planetarium"
+      "website": "https://www.parkland.edu/Audience/Community-Business/Parkland-Presents/Planetarium",
+      "rating": 1,
+      "price": 10,
+      "address": "2400 W Bradley Ave, Champaign, IL 61821"
     },
     {
       "name": "Orpheum Children's Science Museum",
@@ -318,7 +402,10 @@
       "image": "https://illinoisnewsroom.org/wp-content/uploads/2020/06/20200611_171435-scaled.jpg",
       "lat": 40.1195,
       "long": -88.2424,
-      "website": "https://orpheumkids.com/"
+      "website": "https://orpheumkids.com/",
+      "rating": 1,
+      "price": 10,
+      "address": "346 N Neil St, Champaign, IL 61820"
     },
     {
       "name": "Champaign County History Museum",
@@ -329,7 +416,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Champaign_County_Historical_Museum_Champaign_Illinois_from_southeast.jpg",
       "lat": 40.1165,
       "long": -88.2385,
-      "website": "https://www.champaigncountyhistory.org/"
+      "website": "https://www.champaigncountyhistory.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "102 E University Ave, Champaign, IL 61820"
     },
     {
       "name": "The Senior Memorial Chime of Altgeld Hall",
@@ -340,7 +430,10 @@
       "image": "https://lh3.googleusercontent.com/p/AF1QipMVVZsgWJhY5Jt5Dokgx3A8X9tfhbYhHO32GYgb=s1600-w400",
       "lat": 40.1020,
       "long": -88.2313,
-      "website": "https://illinois.edu/chimes/"
+      "website": "https://illinois.edu/chimes/",
+      "rating": 1,
+      "price": 10,
+      "address": "Altgeld Hall, 323, 1409 W Green St, Urbana, IL 61801"
     },
     {
       "name": "Chicago Sports Museum",
@@ -351,7 +444,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Chicago_Sports_Museum_entrance.jpg",
       "lat": 41.8980,
       "long": -87.6236,
-      "website": "https://www.chicagosportsmuseum.com/"
+      "website": "https://www.chicagosportsmuseum.com/",
+      "rating": 1,
+      "price": 10,
+      "address": "600 S Gregory St, Urbana, IL 61801"
     },
     {
       "name": "Hancock Stadium",
@@ -362,7 +458,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/ISU_vs_Drake_at_Hancock_Stadium.jpg/255px-ISU_vs_Drake_at_Hancock_Stadium.jpg",
       "lat": 40.5123,
       "long": -88.9965,
-      "website": "https://goredbirds.com/sports/2014/5/12/Facilty_hancock_stadium.aspx"
+      "website": "https://goredbirds.com/sports/2014/5/12/Facilty_hancock_stadium.aspx",
+      "rating": 1,
+      "price": 10,
+      "address": "N Main St, Normal, IL 61761"
     },
     {
       "name": "Cloud Gate/The Big Bean",
@@ -373,7 +472,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Cloud_Gate_%28The_Bean%29_from_east%27.jpg/340px-Cloud_Gate_%28The_Bean%29_from_east%27.jpg",
       "lat": 41.8827,
       "long": -87.6233,
-      "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartcloudgateinmillenniumpark.html"
+      "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartcloudgateinmillenniumpark.html",
+      "rating": 1,
+      "price": 10,
+      "address": "201 E Randolph St, Chicago, IL 60602"
     },
     {
       "name": "Chicago History Museum",
@@ -384,7 +486,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Chicago_History.JPG",
       "lat": 41.9117,
       "long": -87.6317,
-      "website": "https://www.chicagohistory.org/"
+      "website": "https://www.chicagohistory.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "1601 N Clark St, Chicago, IL 60614"
     },
     {
       "name": "Shawnee National Forest",
@@ -395,7 +500,10 @@
       "image": "https://www.enjoyillinois.com/assets/Tourism-Operators/images/Pine-Hills.jpg",
       "lat": 37.4922,
       "long": -88.9339,
-      "website": "https://www.fs.usda.gov/shawnee"
+      "website": "https://www.fs.usda.gov/shawnee",
+      "rating": 1,
+      "price": 10,
+      "address": "Herod, IL 62946"
     },
     {
       "name": "Fort De Chartres",
@@ -406,7 +514,10 @@
       "image": "http://www.fortdechartres.us/wp-content/uploads/2016/11/Fort-Arial-View-e1484356551395-480x360.jpg",
       "lat": 38.0878,
       "long": -90.1590,
-      "website": "http://www.fortdechartres.us/"
+      "website": "http://www.fortdechartres.us/",
+      "rating": 1,
+      "price": 10,
+      "address": "1350 State Rte 155, Prairie Du Rocher, IL 62277"
     },
     {
       "name": "Chicago Cultural Center",
@@ -417,7 +528,10 @@
       "image": "https://cdn.choosechicago.com/uploads/2019/06/CC-Cultural-Center-Dome-2400x1633.jpg",
       "lat": 41.8838,
       "long": -87.6250,
-      "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_culturalcenter.html"
+      "website": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_culturalcenter.html",
+      "rating": 1,
+      "price": 10,
+      "address": "78 E Washington St, Chicago, IL 60602"
     },
     {
       "name": "Field Museum of Natural History",
@@ -428,7 +542,10 @@
       "image": "https://www.fieldmuseum.org/sites/default/files/styles/3x2_1400w/public/2018_03_06_fieldmuseum_lhewett-01.jpg",
       "lat": 41.8663,
       "long": -87.6170,
-      "website": "https://www.fieldmuseum.org/"
+      "website": "https://www.fieldmuseum.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "1400 S Lake Shore Dr, Chicago, IL 60605"
     },
     {
       "name": "Abraham Lincoln Presidential Library & Museum",
@@ -439,7 +556,10 @@
       "image": "https://files.idss.com/C116/0dbeccfa-42ae-40e4-8c94-c8479142d6ce/5e6d064b-d1d0-4b7c-92a3-32008fc3a7ec.jpg",
       "lat": 39.8033,
       "long": -89.6472,
-      "website": "https://presidentlincoln.illinois.gov/"
+      "website": "https://presidentlincoln.illinois.gov/",
+      "rating": 1,
+      "price": 10,
+      "address": "212 N 6th St, Springfield, IL 62701"
     },
     {
       "name": "International Museum of Surgical Science",
@@ -450,7 +570,10 @@
       "image": "https://imssusa.files.wordpress.com/2016/03/photo-4_hallofimortals.jpeg?w=1200",
       "lat": 41.9103,
       "long": -87.6266,
-      "website": "https://imss.org/"
+      "website": "https://imss.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "1524 N Lake Shore Dr, Chicago, IL 60610"
     },
     {
       "name": "American Writers Museum",
@@ -461,7 +584,10 @@
       "image": "https://149352626.v2.pressablecdn.com/wp-content/uploads/2017/10/IMG_5740-1024x768.jpg",
       "lat": 41.8856,
       "long": -87.6249,
-      "website": "https://americanwritersmuseum.org/"
+      "website": "https://americanwritersmuseum.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "180 North Michigan Ave, Chicago, IL 60601"
     },
     {
       "name": "The Merchandise Mart",
@@ -472,10 +598,13 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Merchandise_Mart.jpg",
       "lat": 41.8887,
       "long": -87.6355,
-      "website": "https://www.themart.com/"
+      "website": "https://www.themart.com/",
+      "rating": 1,
+      "price": 10,
+      "address": "222 W Merchandise Mart Plaza, Chicago, IL 60654"
     },
     {
-      "name": "Andrew Jackson Park",
+      "name": "Jackson (Andrew) Park",
       "bathrooms": true,
       "food": true,
       "accessible": true,
@@ -483,7 +612,10 @@
       "image": "https://cdn.branchcms.com/JVXM9wad0E-1708/images/trails/trail-system/IMG_1968-large-2-57.1.jpg",
       "lat": 41.7809,
       "long": -87.5802,
-      "website": "https://www.chicagoparkdistrict.com/parks-facilities/jackson-park"
+      "website": "https://www.chicagoparkdistrict.com/parks-facilities/jackson-park",
+      "rating": 1,
+      "price": 10,
+      "address": "6401 S Stony Is Ave, Chicago, IL 60637"
     },
     {
       "name": "Block Museum of Art",
@@ -494,7 +626,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/NU_Block_Museum_of_Art.JPG/1200px-NU_Block_Museum_of_Art.JPG",
       "lat": 42.0524,
       "long": -87.6727,
-      "website": "https://www.blockmuseum.northwestern.edu/"
+      "website": "https://www.blockmuseum.northwestern.edu/",
+      "rating": 1,
+      "price": 10,
+      "address": "40 Arts Cir Dr, Evanston, IL 60208"
     },
     {
       "name": "Illinois Holocaust Museum & Education Center",
@@ -505,7 +640,10 @@
       "image": "https://www.ilholocaustmuseum.org/wp-content/uploads/2020/11/museum-lobby.jpg",
       "lat": 42.0566,
       "long": -87.7608,
-      "website": "https://www.ilholocaustmuseum.org/"
+      "website": "https://www.ilholocaustmuseum.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "9603 Woods Dr, Skokie, IL 60077"
     },
     {
       "name": "Lincoln Monument Association",
@@ -516,7 +654,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lincoln%27s_Tomb.JPG",
       "lat": 39.8232,
       "long": -89.6557,
-      "website": "https://lincolntomb.org/"
+      "website": "https://lincolntomb.org/",
+      "rating": 1,
+      "price": 10,
+      "address": "1500 Monument Ave, Springfield, IL 62702"
     },
     {
       "name": "Oak Street Beach",
@@ -527,7 +668,10 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Oak_Street_Beach.jpg/250px-Oak_Street_Beach.jpg",
       "lat": 41.9030,
       "long": -87.6228,
-      "website": "https://www.chicagoparkdistrict.com/parks-facilities/oak-street-beach"
+      "website": "https://www.chicagoparkdistrict.com/parks-facilities/oak-street-beach",
+      "rating": 1,
+      "price": 10,
+      "address": "North Lake Shore Drive, Chicago"
     },
     {
       "name": "Tribune Tower",
@@ -538,7 +682,10 @@
       "image": "https://mansion-global-app.s3.amazonaws.com/stories/tribune-tower-one-of-chicago-s-most-recognizable-buildings-offers-luxury-living-with-a-side-of-history/assets/kZXTbRbTwN/tribtower_lead_v4_vert-2349x2349.jpeg",
       "lat": 41.8905,
       "long": -87.6233,
-      "website": "https://tribunetower.com/"
+      "website": "https://tribunetower.com/",
+      "rating": 1,
+      "price": 10,
+      "address": "435 Michigan Ave, Chicago, IL 60611"
     }
   ]   
 }  

@@ -10,7 +10,8 @@ public class Attraction implements Comparable<Attraction>, Serializable {
     String Website;
     Integer Rating;
     Integer Price;
-    public Attraction(Integer id, String subjectName, String image, String distance, String website,Integer rating,Integer price) {
+    String Address;
+    public Attraction(Integer id, String subjectName, String image, String distance, String website,Integer rating,Integer price,String address) {
         this.ID = id;
         this.Name = subjectName;
         this.Image = image;
@@ -18,6 +19,7 @@ public class Attraction implements Comparable<Attraction>, Serializable {
         this.Website = website;
         this.Price = price;
         this.Rating = rating;
+        this.Address = address;
     }
 
     public int compareTo(Attraction attraction)
