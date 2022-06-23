@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -32,6 +33,7 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Objects;
 
 public class MoreActivity extends AppCompatActivity {
@@ -54,6 +56,9 @@ public class MoreActivity extends AppCompatActivity {
         //Get the review if there is one and hide/show elements accordingly
         SharedPreferences sp = getSharedPreferences("reviews",MODE_PRIVATE);
         String review = sp.getString(Integer.toString(data.ID),"");
+        Boolean bookmarked = sp.getBoolean((data.ID)+"bm",false);
+        CheckBox bookmark = findViewById(R.id.bookmark);
+        bookmark.setChecked(bookmarked);
         LinearLayout submitLayout = findViewById(R.id.submitReviewLayout);
         LinearLayout editLayout = findViewById(R.id.editReviewLayout);
         if(review.equals("")) {
@@ -164,6 +169,50 @@ public class MoreActivity extends AppCompatActivity {
                 Uri uri = Uri.parse(website);
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
+            }
+        });
+
+        String address = data.Address;
+        Button routeButton = findViewById(R.id.routeButton);
+        routeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri gmmIntentUri = Uri.parse("geo:"+data.Lat+","+data.Long+"?q=" + Uri.encode(address));
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW,gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+        });
+
+
+        bookmark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putBoolean((data.ID)+"bm", bookmark.isChecked());
+                editor.apply();
+                try {
+                    JSONArray bookmarkList = new JSONArray(sp.getString("bookmarkList", "[]"));
+                    List<Integer> dataList = new ArrayList<Integer>();
+                    for(int i=0;i<bookmarkList.length();i++){
+                        dataList.add(bookmarkList.getInt(i));
+                    }
+
+                    if (!bookmark.isChecked()) {
+                        bookmarkList.remove(dataList.indexOf(data.ID));
+                        SharedPreferences.Editor editor2 = sp.edit();
+                        editor2.putString("bookmarkList", bookmarkList.toString());
+                        editor2.apply();
+
+                    } else {
+                        bookmarkList.put(data.ID);
+                        SharedPreferences.Editor editor2 = sp.edit();
+                        editor2.putString("bookmarkList", bookmarkList.toString());
+                        editor2.apply();
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
 

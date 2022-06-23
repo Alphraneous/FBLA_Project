@@ -28,4 +28,5 @@
         <item>Clubs/Bars</item>
         <item>Sports</item>
     </string-array>
+    <string name="title_activity_map">mapActivity</string>
 </resources>

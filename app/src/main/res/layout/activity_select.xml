@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,15 +10,17 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
-        android:textSize="30sp"
-        android:text="@string/search_attractions" />
+        android:text="@string/search_attractions"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
         android:layout_marginTop="20sp"
@@ -29,7 +32,7 @@
 
     <SeekBar
         android:id="@+id/seekBar"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        style="@android:style/Widget.Material.SeekBar.Discrete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView2"
@@ -46,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/seekBar"
         android:layout_marginTop="20sp"
+        android:textColor="@color/white"
         android:paddingStart="50sp"
         android:paddingEnd="50sp"
         android:text="@string/within_40_miles"
@@ -54,7 +58,7 @@
 
     <SeekBar
         android:id="@+id/seekBar2"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        style="@android:style/Widget.Material.SeekBar.Discrete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView6"
@@ -66,46 +70,70 @@
         android:scrollbarSize="10dp" />
 
     <LinearLayout
-        android:layout_below="@id/seekBar2"
-        android:layout_marginTop="50sp"
-        android:paddingStart="50sp"
-        android:paddingEnd="50sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_below="@id/seekBar2"
+        android:layout_marginTop="50sp"
+        android:orientation="vertical"
+        android:paddingStart="50sp"
+        android:paddingEnd="50sp">
 
         <Spinner
             android:id="@+id/spinner"
+            style="@style/spinner_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
             android:entries="@array/spinner_options"
-            style="@style/spinner_style"
-            android:layout_marginBottom="20sp"/>
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
 
 
         <CheckBox
             android:id="@+id/bathroomCheckbox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/has_bathrooms" />
+            android:background="@drawable/checkboxbg"
+            android:text="@string/has_bathrooms"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
 
         <CheckBox
             android:id="@+id/foodCheckbox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/restaraunts_concessions_nearby" />
+            android:background="#3A3232"
+            android:layout_gravity="center"
+            android:text="@string/restaraunts_concessions_nearby"
+            android:textColor="@color/white" />
 
         <CheckBox
             android:id="@+id/accessibleCheckbox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/wheelchair_accessible" />
+            android:layout_gravity="center"
+            android:background="@drawable/checkboxbg2"
+            android:text="@string/wheelchair_accessible"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50sp"
-            android:text="@string/search" />
+            android:text="@string/search"
+            android:textColor="@color/white" />
+
+
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bookmarkPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/ic_baseline_bookmark_border_24" />
 </RelativeLayout>

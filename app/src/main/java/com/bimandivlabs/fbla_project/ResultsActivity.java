@@ -1,6 +1,7 @@
 package com.bimandivlabs.fbla_project;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -22,6 +23,7 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.CancellationToken;
 import com.google.android.gms.tasks.OnTokenCanceledListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.maps.android.SphericalUtil;
 
 import org.json.JSONArray;
@@ -30,24 +32,25 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
 
-public class ResultsActivity extends AppCompatActivity {
+public class ResultsActivity extends AppCompatActivity implements Serializable {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
-
+        FloatingActionButton mapBtn = findViewById(R.id.floatingActionButton);
+        mapBtn.setVisibility(View.GONE);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setTitle("Search Results");
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
         Intent dataIntent = getIntent();
         if (dataIntent != null) {
             Integer maxRange = dataIntent.getIntExtra("within",100);
@@ -88,6 +91,7 @@ public class ResultsActivity extends AppCompatActivity {
 
 
 
+    @SuppressLint("MissingPermission")
     public void runChecks(Boolean needsBathroom, Boolean needsFood, Boolean needsAccessible, Integer requestedType, Integer maxRange, Integer maxPrice) {
         FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -108,6 +112,7 @@ public class ResultsActivity extends AppCompatActivity {
         })
                 .addOnSuccessListener(this, location -> {
                     if (location != null) {
+                        FloatingActionButton mapBtn = findViewById(R.id.floatingActionButton);
                         final ListView resultsList = findViewById(R.id.resultsList);
                         ArrayList<Attraction> resultArray = new ArrayList<>();
                         String attractionsJSON = loadJSONFromAsset();
@@ -134,12 +139,18 @@ public class ResultsActivity extends AppCompatActivity {
                                 int distanceMiles = (int) Math.round(distance / 1609.34);
                                 Boolean mdr = distanceMiles < maxRange;
                                 if (checkReq(needsBathroom,hasBathrooms) && checkReq(needsFood,hasFood) && checkReq(needsAccessible, hasAccessible) && checkType(requestedType, activityType) && mdr && (price <= maxPrice)) {
-                                    resultArray.add(new Attraction(i,name,image,Integer.toString(distanceMiles),website,rating,price,address));
+                                    resultArray.add(new Attraction(i,name,image,Integer.toString(distanceMiles),website,rating,price,address,Lat,Long));
                                 }
                             }
                             TextView nrf = findViewById(R.id.textView3);
                             TextView nrf2 = findViewById(R.id.textView4);
                             if (resultArray.size() != 0) {
+                                mapBtn.setVisibility(View.VISIBLE);
+                                mapBtn.setOnClickListener(view -> {
+                                    Intent intent = new Intent(ResultsActivity.this, MapActivity.class);
+                                    intent.putExtra("results",resultArray);
+                                    startActivity(intent);
+                                });
                                 Collections.sort(resultArray);
                                 CustomAdapter customAdapter = new CustomAdapter(ResultsActivity.this, resultArray);
                                 resultsList.setAdapter(customAdapter);

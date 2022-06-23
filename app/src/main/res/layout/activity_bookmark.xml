@@ -4,26 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultsActivity">
+    tools:context=".BookmarkActivity">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="125dp"
-        android:layout_height="114dp"
-        android:clickable="true"
-        android:layout_margin="20dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        app:srcCompat="@android:drawable/ic_dialog_map" />
-
-    <ListView
-        android:id="@+id/resultsList"
-        android:layout_width="409dp"
-        android:layout_height="729dp">
-
-    </ListView>
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:textAlignment="center"
         android:layout_margin="30sp"
@@ -31,17 +15,24 @@
         android:layout_marginTop="20sp"
         android:textSize="30sp"
         android:visibility="gone"
-        android:text="@string/no_results_found" />
+        android:text="No Bookmarks" />
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:textAlignment="center"
-        android:layout_below="@id/textView3"
+        android:layout_below="@id/textView8"
         android:layout_margin="10sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:textSize="15sp"
         android:visibility="gone"
-        android:text="Try changing your search criteria" />
+        android:text="Find some attractions and bookmark them!" />
+
+    <ListView
+        android:id="@+id/resultsList2"
+        android:layout_width="409dp"
+        android:layout_height="729dp">
+
+    </ListView>
 
 </RelativeLayout>
