@@ -1,5 +1,6 @@
 package com.bimandivlabs.fbla_project;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
@@ -12,12 +13,15 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.bimandivlabs.fbla_project.databinding.ActivityMapBinding;
 
+import org.w3c.dom.Attr;
+
 import java.util.ArrayList;
 
-public class MapActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapActivity extends FragmentActivity implements OnMapReadyCallback ,GoogleMap.OnMarkerClickListener {
 
     private GoogleMap mMap;
     private ActivityMapBinding binding;
@@ -61,12 +65,26 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         mMap = googleMap;
         Attraction attractionIn = (Attraction) resultsArray.get(0);
         LatLng poiIn = new LatLng(attractionIn.Lat, attractionIn.Long);
-        mMap.addMarker(new MarkerOptions().position(poiIn).title(attractionIn.Name));
+        mMap.addMarker(new MarkerOptions().position(poiIn).title("1 - " + attractionIn.Name));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(poiIn));
         for (int i = 1;i < resultsArray.size();i++) {
             Attraction attraction = (Attraction) resultsArray.get(i);
             LatLng poi = new LatLng(attraction.Lat, attraction.Long);
-            mMap.addMarker(new MarkerOptions().position(poi).title(attraction.Name));
+            mMap.addMarker(new MarkerOptions().position(poi).title((i+1) + " - " + attraction.Name));
+
         }
+        mMap.setOnMarkerClickListener(this);
+    }
+
+    @Override
+    public boolean onMarkerClick(@NonNull Marker marker) {
+        String title = marker.getTitle();
+        assert title != null;
+        String id = title.substring(0,1);
+        Attraction data = (Attraction) resultsArray.get(Integer.parseInt(id)-1);
+        Intent intent = new Intent(MapActivity.this, MoreActivity.class);
+        intent.putExtra("data", data);
+        startActivity(intent);
+        return false;
     }
 }
