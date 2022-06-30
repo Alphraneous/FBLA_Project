@@ -112,6 +112,7 @@ public class ResultsActivity extends AppCompatActivity implements Serializable {
         })
                 .addOnSuccessListener(this, location -> {
                     if (location != null) {
+                        //Get the list of attractions
                         FloatingActionButton mapBtn = findViewById(R.id.floatingActionButton);
                         final ListView resultsList = findViewById(R.id.resultsList);
                         ArrayList<Attraction> resultArray = new ArrayList<>();
@@ -121,6 +122,7 @@ public class ResultsActivity extends AppCompatActivity implements Serializable {
                             JSONArray attractionsJSONArray = jsonRootObject.optJSONArray("Attraction");
                             for (int i = 0; i < Objects.requireNonNull(attractionsJSONArray).length(); i++) {
                                 JSONObject attraction = attractionsJSONArray.getJSONObject(i);
+                                //Get the individual data of each attraction
                                 String name = attraction.optString("name");
                                 Boolean hasBathrooms = attraction.optBoolean("bathrooms");
                                 Boolean hasFood = attraction.optBoolean("food");
@@ -138,6 +140,7 @@ public class ResultsActivity extends AppCompatActivity implements Serializable {
                                 int distance = (int) Math.round(SphericalUtil.computeDistanceBetween(currentLocation,dest));
                                 int distanceMiles = (int) Math.round(distance / 1609.34);
                                 Boolean mdr = distanceMiles < maxRange;
+                                //Check Against the user's criteria
                                 if (checkReq(needsBathroom,hasBathrooms) && checkReq(needsFood,hasFood) && checkReq(needsAccessible, hasAccessible) && checkType(requestedType, activityType) && mdr && (price <= maxPrice)) {
                                     resultArray.add(new Attraction(i,name,image,Integer.toString(distanceMiles),website,rating,price,address,Lat,Long));
                                 }
